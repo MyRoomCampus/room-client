@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+MyRoom
+MyRoom展示子系统仓库
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+✨ Features
+待补充．．．
 
-## Available Scripts
+🚀 Technologies
+- ui库：semi
+- react: 17.0.2
+- React-router 6.3.0
+- Axios
+- Redux-toolkit
 
-In the project directory, you can run:
 
-### `npm start`
+📦 Quick start
+# Install dependencies.
+npm install
+# Run project in dev.
+npm start
+# Build project to production.
+npm run build
+# Run lint
+pnpm run lint
+Project directory
+|-- room-client
+    |-- App.js                  // 根组件
+    |-- index.js                // 入口文件
+    |-- api                     // 网路请求代码、工具类函数和相关配置
+    |   |-- config.js
+    |   |-- request.js
+    |   |-- utils.js
+    |-- application             // 入口文件
+    |   |-- DemoPage            // 此为测试页面
+    |   |   |-- index.js
+    |   |-- Home                // 首页
+    |   |   |-- index.js        // 函数组件
+    |   |   |-- style.css       // 局部样式
+    |   |-- HouseList
+    |   |   |-- index.js
+    |   |   |-- style.css
+    |   |-- Login
+    |   |   |-- index.js
+    |   |   |-- style.css
+    |   |-- Register
+    |   |   |-- index.js
+    |   |   |-- style.css
+    |   |-- UserInfo
+    |       |-- index.js
+    |       |-- style.css
+    |-- assets                  // 字体配置及全局样式
+    |   |-- global-style.css
+    |-- baseUI                  // 基础 UI 轮子
+    |-- components              // 可复用的 UI 组件
+    |-- routes                  // 路由配置文件
+    |   |-- index.js
+    |-- store                   // redux 相关文件
+        |-- index.js
+        |-- slice               // 定义切片的相关文件
+            |-- demoSlice.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+⚽️ 项目分工
+- 登录注册模块以及个人信息页面
+- 房源卡片页面以及房源详情页面
+- 低代码解析器（活动页）
