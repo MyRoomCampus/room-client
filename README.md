@@ -1,27 +1,27 @@
-MyRoom
-MyRoom展示子系统仓库
+# MyRoom
+## MyRoom展示子系统仓库
 
-✨ Features
+### ✨ Features
 待补充．．．
 
-🚀 Technologies
+### 🚀 Technologies
 - ui库：semi
 - react: 17.0.2
 - React-router 6.3.0
 - Axios
 - Redux-toolkit
 
-
-📦 Quick start
+### 📦 Quick start
+```sh
 # Install dependencies.
 npm install
 # Run project in dev.
 npm start
 # Build project to production.
 npm run build
-# Run lint
-pnpm run lint
-Project directory
+```
+
+### 🌲Project directory
 |-- room-client
     |-- App.js                  // 根组件
     |-- index.js                // 入口文件
@@ -58,7 +58,7 @@ Project directory
         |-- slice               // 定义切片的相关文件
             |-- demoSlice.js
 
-⚽️ 项目分工
+### ⚽️ 项目分工
 - 登录注册模块以及个人信息页面
 - 房源卡片页面以及房源详情页面
 - 低代码解析器（活动页）
