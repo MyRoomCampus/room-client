@@ -22,6 +22,7 @@ npm run build
 ```
 
 ### 🌲Project directory
+```
 |-- room-client
     |-- App.js                  // 根组件
     |-- index.js                // 入口文件
@@ -57,6 +58,7 @@ npm run build
         |-- index.js
         |-- slice               // 定义切片的相关文件
             |-- demoSlice.js
+```
 
 ### ⚽️ 项目分工
 - 登录注册模块以及个人信息页面
