@@ -23,8 +23,7 @@ jobs:
       # 运行命令，npm install && npm run build
       - name: npm install and build
         run: |
-          npm install -g pnpm
-          pnpm install
+          npm install
           npm run build
         env:
           CI: true
