@@ -4,6 +4,8 @@ import DemoPage from "../application/DemoPage";
 import Home from "../application/Home";
 import HouseList from "../application/HouseList";
 import UserInfo from "../application/UserInfo";
+import HouseDetails from "../application/HouseList/components/HouseDetails";
+
 const routes = [
   {
     path: "/",
@@ -16,6 +18,10 @@ const routes = [
       {
         path: "/houselist",
         element: <HouseList />,
+      },
+      {
+        path: "/houseDetails",
+        element: <HouseDetails />,
       },
       {
         path: "/userinfo",
