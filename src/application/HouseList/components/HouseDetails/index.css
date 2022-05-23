@@ -1,0 +1,484 @@
+/* common */
+
+.part {
+    background-color: white;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.line {
+    margin-bottom: 10px;
+}
+
+.big-font-size {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.link-style {
+    font-size: 20px;
+    color: grey;
+    text-decoration: none;
+}
+
+.content-style {
+    font-size: 20px;
+    color: grey;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-right-10 {
+    margin-right: 10px;
+}
+
+.avatar {
+    margin: 10px 0;
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+}
+
+.person-name {
+    font-size: 22px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tag {
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.star {
+    background-color: #FEF3DC;
+    border-radius: 5px;
+    padding: 3px;
+    color: brown;
+}
+
+.hr-style {
+    margin: 20px;
+}
+
+.title {
+    color: grey;
+    font-size: 22px;
+}
+
+
+/* HouseCarousel */
+
+
+/* HouseData */
+
+.houseData .line-2 span {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+.houseData .line-4 .border-right {
+    border-right: 1px solid grey;
+}
+
+.houseData .line-4 .border-none {
+    border: none;
+}
+
+.houseData .line-4 .border-right p:first-child,
+.houseData .line-4 .border-none p:first-child{
+    color: #FE5500;
+    font-size: 20px;
+}
+
+.houseData .line-5 span:first-child{
+    margin-right: 20px;
+}
+
+.houseData .line-6 span:first-child{
+    margin-right: 20px;
+}
+
+.houseData .line-6 span:last-child{
+    float: right;
+}
+
+.houseData .line-6 span a {
+    text-decoration: none;
+    color: grey;
+}
+
+.houseData .line-7 .subscribe {
+    background-color: #FFF9F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.houseData .line-7 .subscribe {
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.houseData .line-7 .subscribe div:first-child {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.houseData .line-7 .subscribe div:last-child {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #FE5500;
+}
+
+/* HouseManager */
+
+.houseManager .title {
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.houseManager .avatar {
+    margin: 10px 0;
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+}
+
+.houseManager .icon {
+    margin: 20px 0;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.houseManager .details .info,
+.houseManager .details .credit {
+    margin-bottom: 8px;
+}
+
+.houseManager .details .info span:first-child{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+.houseManager .details .info span:last-child{
+    border: 1px solid grey;
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 5px;
+    color: grey;
+}
+
+.houseManager .details .credit span:first-child{
+    color: #FE5500;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.houseManager .details .credit span:nth-child(2){
+    font-weight: bold;
+    border-right: 2px solid grey;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+.houseManager .details .credit span:last-child {
+    font-weight: bold;
+    color: grey;
+}
+
+.houseManager .details .service span {
+    margin-right: 5px;
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    color: grey;
+}
+
+/* HouseTest */
+
+.houseTest .houseTest-top {
+    height: 80px;
+    line-height: 80px;
+    background-color: #FEF3DC;
+    padding: 0 28px;
+    border-radius: 5px 5px 0 0;
+}
+
+.houseTest .houseTest-top span:first-child {
+    font-size: 24px;
+    color: brown;
+    font-weight: bolder;
+}
+
+.houseTest .houseTest-top span:nth-child(2) {
+    font-size: 24px;
+    color: #EEB488;
+    font-weight: bolder;
+}
+
+.houseTest .houseTest-top span:last-child {
+    float: right;
+    font-size: 20px;
+    color: brown;
+}
+
+.houseTest .houseTest-bottom {
+    background-color: white;
+    padding: 30px 0;
+}
+
+.houseTest .houseTest-bottom .line {
+    margin-bottom: 30px;
+}
+
+.houseTest .houseTest-bottom span a {
+    text-decoration: none;
+    color: grey;
+}
+
+.houseTest .houseTest-bottom .credit span:first-child {
+    background-color: black;
+    color: white;
+    padding: 7px;
+}
+
+.houseTest .houseTest-bottom .credit span:last-child {
+    background-color: #FED78D;
+    color: black;
+    padding: 7px;
+}
+
+.houseTest .houseTest-bottom .picture {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 95px;
+    height: 95px;
+}
+
+.houseTest .houseTest-bottom .desc div:first-child {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.houseTest .houseTest-bottom .desc div:last-child {
+    margin-top: 10px;
+    color: grey;
+}
+
+.houseTest .houseTest-bottom .desc div:last-child span:last-child {
+    float: right;
+}
+
+/* HouseAssess */
+
+.houseAssess .houseAssess-top {
+    height: 80px;
+    line-height: 80px;
+    background-color: #FEF3DC;
+    padding: 0 28px;
+    border-radius: 5px 5px 0 0;
+    margin-top: 10px;
+}
+
+.houseAssess .houseAssess-top div {
+    display: inline-block;
+}
+
+.houseAssess .houseAssess-top div:first-child {
+    /* border: 1px solid black; */
+    width: 40px;
+    height: 40px;
+}
+
+.houseAssess .houseAssess-top div:nth-child(2) {
+    color: #AF7528;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.houseAssess .houseAssess-top span a {
+    color: #AF7528;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    float: right;
+}
+
+.houseAssess .houseAssess-bottom {
+    background-color: white;
+    padding: 30px 0;
+}
+
+.houseAssess .houseAssess-bottom .line-1 span:first-child {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.houseAssess .houseAssess-bottom .line-1 div{
+    float: right;
+}
+
+.houseAssess .houseAssess-bottom .line-1 div span:first-child {
+    color: grey;
+    margin-right: 10px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.houseAssess .houseAssess-bottom .line-1 div span:nth-child(2) {
+    font-weight: bolder;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.houseAssess .houseAssess-bottom .line-1 div span:last-child {
+    color: grey;
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+.houseAssess .houseAssess-bottom .line-1 div span:last-child a {
+    text-decoration: none;
+    color: grey;
+}
+
+.houseAssess .houseAssess-bottom .line-2,
+.houseAssess .houseAssess-bottom .line-3 {
+    margin: 0 20px;
+    margin-top: 15px;
+}
+
+.houseAssess .houseAssess-bottom .line-2 .title,
+.houseAssess .houseAssess-bottom .line-3 .title {
+    font-size: 22px;
+    color: grey;
+    margin-right: 10px;
+}
+
+.houseAssess .houseAssess-bottom .line-2 .value,
+.houseAssess .houseAssess-bottom .line-3 .value {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.houseAssess .houseAssess-bottom .line-2 div {
+    display: inline-block;
+    border: 1px solid black;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background-color: #FE5500;
+}
+
+.houseAssess .houseAssess-bottom .line-2 span:last-child {
+    font-size: 22px;
+    color: #FE5500;
+}
+
+.houseAssess .houseAssess-bottom .icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #FE5500;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+/* HouseNeighbor */
+
+.houseNeighbor .map {
+    margin-top: 15px;
+    border: 1px solid black;
+    height: 250px;
+}
+
+/* HousePrice */
+
+.housePrice .line-vertical {
+    border: 1px solid grey;
+    height: 60px;
+    width: 0;
+}
+
+.housePrice .figure {
+    background-color: #FED78D;
+    height: 250px;
+}
+
+/* HouseSource */
+
+/* HouseNeighborSource */
+
+.houseNeighborSource .more {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f4f4f4;
+}
+
+.houseNeighborSource .more a {
+    text-decoration: none;
+    color: gray;
+}
+
+/* HouseFooter */
+
+.houseFooter .footer {
+    background-color: white;
+}
+
+.houseFooter .footer .online-contact {
+    background-color: #FE972B;
+    color: white;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.houseFooter .footer .phone-call {
+    background-color: #FC5601;
+    color: white;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.houseFooter .footer .online-contact a,
+.houseFooter .footer .phone-call a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
