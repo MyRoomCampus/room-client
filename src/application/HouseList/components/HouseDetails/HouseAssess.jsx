@@ -1,119 +1,140 @@
 import React from 'react';
 import { Col, Row } from '@douyinfe/semi-ui';
+import { ChampionIcon, LineChartIcon, BoyAvatar } from './Icon';
 import './index.css';
 
 export default function HouseAssess() {
   return (
-    <div className="houseAssess">
-      <div className="houseAssess-top">
-        <div></div>
-        <div>入选北京热搜小区榜第3名</div>
-        <span>
-          <a href="https://www.google.com"> {'>'}</a>
-        </span>
-      </div>
-      <div className="houseAssess-bottom">
-        <Row>
-          <Col xs={{ offset: 1, span: 23 }} className="line-1">
-            <span>远洋山水</span>
-            <div>
-              <span>测评得分</span>
-              <span>9.5</span>
+    <div className="houseAssess padding-bottom-15">
+      <Row className="house-assess-top">
+        <Col xs={{ offset: 1, span: 15 }} className="flex-align-center">
+          <ChampionIcon></ChampionIcon>
+          <span className="padding-left-5 special-font-4">
+            入选北京热搜小区榜第3名
+          </span>
+        </Col>
+        <Col xs={{ offset: 6, span: 1 }}>
+          <span className="special-box">
+            <a href="https://www.google.com" className="link-style float-right">
+              {'>>'}
+            </a>
+          </span>
+        </Col>
+      </Row>
+      <Row className="house-assess-bottom padding-bottom-15">
+        <Col xs={{ span: 24 }}>
+          <Row className="padding-top-20">
+            <Col xs={{ offset: 1, span: 22 }} className="flex-between">
+              <span className="part-title">远洋山水</span>
               <span>
-                <a href="https://www.google.com"> {'>'}</a>
+                <a href="https://www.google.com" className="link-style">
+                  <span>测评得分</span>
+                  <span className="padding-left-5 black-font">9.5</span> {'>'}
+                </a>
               </span>
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={{ offset: 1, span: 23 }} className="line-2">
-            <span className="title">小区均价</span>
-            <span className="value">129658元/平</span>
-            <div></div>
-            <span>环比上涨1.49%</span>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={{ offset: 1, span: 23 }} className="line-3">
-            <span className="title">教育资源</span>
-            <span className="value">人大附小银燕校区</span>
-          </Col>
-          <Col xs={{ offset: 1, span: 23 }} className="line-3">
-            <span className="title">在售房源</span>
-            <span className="value">24套</span>
-          </Col>
-        </Row>
-        <hr className="hr-style" />
-        <Row className="margin-bottom-10">
-          <Col xs={{ offset: 1, span: 10 }}>
-            <span className="big-font-size">小区点评（20）</span>
-          </Col>
-          <Col xs={{ offset: 7, span: 5 }}>
-            <a href="https://www.google.com" className="link-style">
-              查看全部 {'>'}
-            </a>
-          </Col>
-          <Col xs={{ span: 1 }}></Col>
-        </Row>
-        <Row className="margin-bottom-10">
-          <Col xs={{ offset: 1, span: 22 }}>
-            <span className="content-style">
-              超过20位小区业主和附近居民进行了评分
-            </span>
-          </Col>
-          <Col xs={{ span: 1 }}></Col>
-        </Row>
-        <Row>
-          <Col xs={{ offset: 1, span: 4 }}>
-            <div className="avatar"></div>
-          </Col>
-          <Col xs={{ span: 18 }}>
-            <div className="yezhu-top margin-bottom-10 margin-top-15">
-              <span className="margin-right-10 person-name">贾平</span>
-              <span className="margin-right-10 tag">小区业主</span>
-              <span className="margin-right-10 star">精华</span>
-            </div>
-            <div className="yezhu-bottom">
-              <span className="margin-right-10 content-style">10-07</span>
-              <span className="margin-right-10 content-style">11:37</span>
-              <span className="margin-right-10 content-style">浏览91</span>
-            </div>
-          </Col>
-          <Col xs={{ span: 1 }}></Col>
-        </Row>
-        <Row>
-          <Col xs={{ offset: 1, span: 22 }}>
-            <span>
-              楼下本来有一个超市卖早餐和杂货，最近对门又开了间罗森，更加便利。早餐有包子油条...
-            </span>
-          </Col>
-          <Col xs={{ span: 1 }}></Col>
-        </Row>
-        <hr className="hr-style" />
-        <Row>
-          <Col xs={{ offset: 1, span: 10 }}>
-            <span className="big-font-size">大家都在问（20）</span>
-          </Col>
-          <Col xs={{ offset: 7, span: 5 }}>
-            <a href="https://www.google.com" className="link-style">
-              查看全部 {'>'}
-            </a>
-          </Col>
-          <Col xs={{ span: 1 }}></Col>
-        </Row>
-        <Row className="margin-top-15">
-          <Col xs={{ offset: 1, span: 2 }}>
-              <div className="icon">问</div>
-          </Col>
-          <Col xs={{ span: 10 }}>
-            <span>小区物业一年给多少钱都管...</span>
-          </Col>
-          <Col xs={{ offset: 5, span: 5 }}>
-            <span className="title">31个回答</span>
-          </Col>
-          <Col xs={{ span: 1 }}></Col>
-        </Row>
-      </div>
+            </Col>
+          </Row>
+          <Row className="padding-top-20">
+            <Col xs={{ offset: 1, span: 12 }}>
+              <span className="attr-name">小区均价</span>
+              <span className="attr-value">129658元/平</span>
+            </Col>
+            <Col xs={{ span: 10 }} className="flex-align-center">
+              <LineChartIcon></LineChartIcon>
+              <span className="attr-value padding-left-5">环比上涨1.49%</span>
+            </Col>
+          </Row>
+          <Row className="padding-top-10">
+            <Col xs={{ offset: 1, span: 22 }}>
+              <span className="attr-name">教育资源</span>
+              <span className="attr-value">人大附小银燕校区</span>
+            </Col>
+          </Row>
+          <Row className="padding-top-10">
+            <Col xs={{ offset: 1, span: 22 }}>
+              <span className="attr-name">在售房源</span>
+              <span className="attr-value">24套</span>
+            </Col>
+          </Row>
+          <Row className="padding-top-10">
+            <Col xs={{ offset: 1, span: 22 }}>
+              <hr />
+            </Col>
+          </Row>
+          <Row className="padding-top-10">
+            <Col xs={{ offset: 1, span: 22 }} className="flex-between">
+              <span className="part-title">小区点评（20）</span>
+              <span>
+                <a
+                  href="https://www.google.com"
+                  className="link-style float-right"
+                >
+                  查看全部 {'>'}
+                </a>
+              </span>
+            </Col>
+          </Row>
+          <Row className="padding-top-10">
+            <Col xs={{ offset: 1, span: 22 }}>
+              <span className="highlight-attr-name">
+                超过20位小区业主和附近居民进行了评分
+              </span>
+            </Col>
+          </Row>
+          <Row className="padding-top-20 flex-align-center">
+            <Col xs={{ offset: 1, span: 5 }}>
+              <BoyAvatar></BoyAvatar>
+            </Col>
+            <Col xs={{ span: 15 }}>
+              <div className="flex-align-center">
+                <span className="person-name">贾平</span>
+                <span className="no-border-tag lessen-font">小区业主</span>
+                <span className="essence-tag lessen-font">精华</span>
+              </div>
+              <div className="flex-align-center padding-top-5">
+                <span>10-07</span>
+                <span className="padding-left-5">11:37</span>
+                <span className="padding-left-5">浏览91</span>
+              </div>
+            </Col>
+          </Row>
+          <Row className="padding-top-5">
+            <Col xs={{ offset: 1, span: 22 }}>
+              <span className="comment">
+                楼下本来有一个超市卖早餐和杂货，最近对门又开了间罗森，更加便利。早餐有包子油条
+                ...
+              </span>
+            </Col>
+          </Row>
+          <Row className="padding-top-10">
+            <Col xs={{ offset: 1, span: 22 }}>
+              <hr />
+            </Col>
+          </Row>
+          <Row className="padding-top-10">
+            <Col xs={{ offset: 1, span: 22 }}>
+              <span className="part-title">大家都在问（20）</span>
+              <span>
+                <a
+                  href="https://www.google.com"
+                  className="link-style float-right"
+                >
+                  查看全部 {'>'}
+                </a>
+              </span>
+            </Col>
+          </Row>
+          <Row className="padding-top-20">
+            <Col xs={{ offset: 1, span: 22 }} className="flex-between">
+              <span className="question">问</span>
+              <span style={{ marginLeft: -20 }}>
+                小区物业一年给多少钱都管 ...{' '}
+              </span>
+              <span className="answer">31个回答</span>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
     </div>
   );
 }

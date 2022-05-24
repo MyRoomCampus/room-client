@@ -1,120 +1,153 @@
 import React from 'react';
 import { Col, Row } from '@douyinfe/semi-ui';
+import {
+  FeedbackIcon,
+  PublishInstitutionIcon,
+  QualificationIcon,
+} from './Icon';
 import './index.css';
 
 export default function HouseData() {
   return (
     <div className="part houseData">
-      <Row gutter={[0, 0]} className="line line-1">
-        <Col xs={{ offset: 1, span: 4 }}>
-          <span>楼龄新</span>
+      <Row className="padding-top-10">
+        <Col xs={{ span: 6 }}>
+          <span className="font-size-10 tag-span">楼龄新</span>
         </Col>
-        <Col xs={{ offset: 1, span: 4 }}>
-          <span>近地铁</span>
+        <Col xs={{ span: 6 }}>
+          <span className="font-size-10 tag-span">近地铁</span>
         </Col>
-        <Col xs={{ offset: 10, span: 4 }}>
-          <span>反馈</span>
-        </Col>
-      </Row>
-      <Row gutter={[0, 0]} className="line line-2">
-        <Col xs={{ offset: 1, span: 7 }}>
-          <span>3室2厅</span>
-        </Col>
-        <Col xs={{ offset: 1, span: 7 }}>
-          <span>远洋山水</span>
-        </Col>
-      </Row>
-      <Row gutter={[0, 0]} className="line line-3">
-        <Col xs={{ offset: 1, span: 7 }}>
-          <img src="" alt="" />
-          <span>房源发布机构</span>
-        </Col>
-        <Col xs={{ offset: 1, span: 7 }}>
-          <img src="" alt="" />
-          <span>相关资质</span>
-        </Col>
-      </Row>
-      <Row gutter={[0, 0]} className="line line-4">
-        <Col xs={{ offset: 1, span: 7 }}>
-          <div className="border-right">
-            <p>190万</p>
-            <p>售价</p>
-          </div>
-        </Col>
-        <Col xs={{ offset: 1, span: 7 }}>
-          <div className="border-right">
-            <p>3室2厅</p>
-            <p>房型</p>
-          </div>
-        </Col>
-        <Col xs={{ offset: 1, span: 7 }}>
-          <div className="border-none">
-            <p>108.99平</p>
-            <p>建筑面积</p>
-          </div>
-        </Col>
-      </Row>
-      <Row gutter={[0, 0]} className="line line-5">
-        <Col xs={{ offset: 1, span: 11 }}>
-          <span>单价</span>
-          <span>17592元/平</span>
-        </Col>
-        <Col xs={{ offset: 1, span: 11 }}>
-          <span>挂牌</span>
-          <span>2020-12-23</span>
-        </Col>
-        <Col xs={{ offset: 1, span: 11 }}>
-          <span>装修</span>
-          <span>精装修</span>
-        </Col>
-        <Col xs={{ offset: 1, span: 11 }}>
-          <span>电梯</span>
-          <span>有</span>
-        </Col>
-        <Col xs={{ offset: 1, span: 11 }}>
-          <span>类型</span>
-          <span>普通住宅</span>
-        </Col>
-        <Col xs={{ offset: 1, span: 11 }}>
-          <span>年代</span>
-          <span>2019年</span>
-        </Col>
-      </Row>
-      <Row gutter={[0, 0]} className="line line-6">
-        <Col xs={{ offset: 1, span: 23 }}>
-          <span>小区</span>
-          <span>西三旗 富力桃园</span>
-          <span>
-            <a href="https://www.google.com"> {'>'}</a>
-          </span>
-        </Col>
-        <Col xs={{ offset: 1, span: 23 }}>
-          <span>预算</span>
-          <span>计算贷款金额</span>
-          <span>
-            <a href="https://www.google.com">房贷计算器 {'>'}</a>
-          </span>
-        </Col>
-        <Col xs={{ offset: 1, span: 23 }}>
-          <span>楼层</span>
-          <span>高楼层/共18层</span>
-          <span>
-            <a href="https://www.google.com">咨询楼层 {'>'}</a>
-          </span>
-        </Col>
-        <Col xs={{ offset: 1, span: 23 }}>
-          <span>房屋核验码</span>
-          <span>20210112hAEG7</span>
-          <span></span>
-        </Col>
-      </Row>
-      <Row gutter={[0, 0]} className="line line-7">
-        <Col xs={{ offset: 1, span: 23 }}>
-          <div className="subscribe">
-            <div style={{ width: 'fit-content', marginRight: 10 }}>
-              订阅房源动态，掌握一手信息
+        <Col xs={{ offset: 6, span: 6 }}>
+          <a href="https://www.google.com" className="link-style feedback">
+            <div className="feedback-icon">
+              <FeedbackIcon></FeedbackIcon>
             </div>
-            <div>去订阅</div>
+            <div className="feedback-icon">反馈</div>
+          </a>
+        </Col>
+      </Row>
+      <Row className="padding-top-5">
+        <Col xs={{ offset: 1, span: 6 }}>
+          <span className="house-title">3室2厅</span>
+        </Col>
+        <Col xs={{ span: 8 }}>
+          <span className="house-title">远洋山水</span>
+        </Col>
+      </Row>
+      <Row className="padding-top-10">
+        <Col xs={{ offset: 1, span: 8 }} className="publish-institution-icon">
+          <PublishInstitutionIcon></PublishInstitutionIcon>
+          <span className="padding-left-5">房源发布机构</span>
+        </Col>
+        <Col xs={{ offset: 1, span: 8 }} className="qualification-icon">
+          <QualificationIcon></QualificationIcon>
+          <span className="padding-left-5">相关资质</span>
+        </Col>
+      </Row>
+      <Row className="padding-top-20">
+        <Col xs={{ offset: 1, span: 6 }}>
+          <div className="border-right">
+            <p className="highlight-attr-value">190万</p>
+            <p className="highlight-attr-name padding-top-5">售价</p>
+          </div>
+        </Col>
+        <Col xs={{ offset: 1, span: 7 }}>
+          <div className="border-right">
+            <p className="highlight-attr-value">3室2厅</p>
+            <p className="highlight-attr-name padding-top-5">房型</p>
+          </div>
+        </Col>
+        <Col xs={{ offset: 1, span: 7 }}>
+          <div>
+            <p className="highlight-attr-value">108.99平</p>
+            <p className="highlight-attr-name padding-top-5">建筑面积</p>
+          </div>
+        </Col>
+      </Row>
+      <Row className="padding-top-20">
+        <Col xs={{ offset: 1, span: 11 }}>
+          <span className="attr-name">单价</span>
+          <span className="attr-value">17592元/平</span>
+        </Col>
+        <Col xs={{ offset: 1, span: 11 }}>
+          <span className="attr-name">挂牌</span>
+          <span className="attr-value">2020-12-23</span>
+        </Col>
+      </Row>
+      <Row className="padding-top-10">
+        <Col xs={{ offset: 1, span: 11 }}>
+          <span className="attr-name">装修</span>
+          <span className="attr-value">精装修</span>
+        </Col>
+        <Col xs={{ offset: 1, span: 11 }}>
+          <span className="attr-name">电梯</span>
+          <span className="attr-value">有</span>
+        </Col>
+      </Row>
+      <Row className="padding-top-10">
+        <Col xs={{ offset: 1, span: 11 }}>
+          <span className="attr-name">类型</span>
+          <span className="attr-value">普通住宅</span>
+        </Col>
+        <Col xs={{ offset: 1, span: 11 }}>
+          <span className="attr-name">年代</span>
+          <span className="attr-value">2019年</span>
+        </Col>
+      </Row>
+      <Row className="padding-top-10">
+        <Col xs={{ offset: 1, span: 12 }}>
+          <span className="attr-name">小区</span>
+          <span className="attr-value">西三旗 富力桃园</span>
+        </Col>
+        <Col xs={{ offset: 1, span: 9 }}>
+          <span>
+            <a href="https://www.google.com" className="link-style float-right">
+              查看 {'>'}
+            </a>
+          </span>
+        </Col>
+      </Row>
+      <Row className="padding-top-10">
+        <Col xs={{ offset: 1, span: 11 }}>
+          <span className="attr-name">预算</span>
+          <span className="attr-value">计算贷款金额</span>
+        </Col>
+        <Col xs={{ offset: 1, span: 10 }}>
+          <span>
+            <a href="https://www.google.com" className="link-style float-right">
+              房贷计算器 {'>'}
+            </a>
+          </span>
+        </Col>
+      </Row>
+      <Row className="padding-top-10">
+        <Col xs={{ offset: 1, span: 11 }}>
+          <span className="attr-name">楼层</span>
+          <span className="attr-value">高楼层/共18层</span>
+        </Col>
+        <Col xs={{ offset: 1, span: 10 }}>
+          <span>
+            <a href="https://www.google.com" className="link-style float-right">
+              咨询楼层 {'>'}
+            </a>
+          </span>
+        </Col>
+      </Row>
+      <Row className="padding-top-10">
+        <Col xs={{ offset: 1, span: 22 }}>
+          <span className="attr-name">房屋核验码</span>
+          <span className="attr-value">20210112hAEG7</span>
+        </Col>
+      </Row>
+      <Row className="padding-top-20 padding-bottom-15">
+        <Col xs={{ offset: 1, span: 22 }}>
+          <div className="subscribe">
+            <div className="subscribe-left">订阅房源动态，掌握一手信息</div>
+            <div className="subscribe-right">
+              <a href="https://www.google.com" className="link-style">
+                去订阅
+              </a>
+            </div>
           </div>
         </Col>
       </Row>
