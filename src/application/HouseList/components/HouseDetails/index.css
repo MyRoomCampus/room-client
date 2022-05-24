@@ -3,477 +3,305 @@
 .part {
     background-color: white;
     border-radius: 10px;
-    padding: 12px;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
-.line {
-    margin-bottom: 10px;
+.margin-top-10 {
+    margin-top: 10px;
 }
 
-.big-font-size {
-    font-size: 25px;
-    font-weight: bolder;
+.margin-left-5 {
+    margin-left: 5px;
+}
+
+.margin-left--5 {
+    margin-left: -5px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.padding-bottom-10 {
+    padding-bottom: 10px;
+}
+
+.padding-bottom-15 {
+    padding-bottom: 15px;
+}
+
+.padding-top-5 {
+    padding-top: 5px;
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-left-5 {
+    padding-left: 5px;
+}
+
+.tag-span {
+    background-color: #EEB488;
+    border-radius: 5px;
+    display: flex;
+    padding: 10px 7px;
 }
 
 .link-style {
-    font-size: 20px;
     color: grey;
+    font-size: 16px;
     text-decoration: none;
 }
 
-.content-style {
-    font-size: 20px;
+.attr-name {
+    font-size: 18px;
     color: grey;
+    padding-right: 5px;
 }
 
-.margin-top-15 {
-    margin-top: 15px;
-}
-
-.margin-bottom-10 {
-    margin-bottom: 10px;
-}
-
-.margin-right-10 {
-    margin-right: 10px;
-}
-
-.avatar {
-    margin: 10px 0;
-    height: 70px;
-    width: 70px;
-    border: 1px solid black;
-}
-
-.person-name {
-    font-size: 22px;
-    font-weight: bold;
+.attr-value {
     font-size: 18px;
 }
 
-.tag {
-    background-color: lightgrey;
-    border-radius: 5px;
-    padding: 3px;
+.border-right {
+    border-right: 1px solid #dbdbdb;
 }
 
-.star {
-    background-color: #FEF3DC;
-    border-radius: 5px;
-    padding: 3px;
-    color: brown;
-}
-
-.hr-style {
-    margin: 20px;
-}
-
-.title {
-    color: grey;
-    font-size: 22px;
-}
-
-
-/* HouseCarousel */
-
-
-/* HouseData */
-
-.houseData .line-2 span {
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-}
-
-.houseData .line-4 .border-right {
-    border-right: 1px solid grey;
-}
-
-.houseData .line-4 .border-none {
-    border: none;
-}
-
-.houseData .line-4 .border-right p:first-child,
-.houseData .line-4 .border-none p:first-child{
-    color: #FE5500;
-    font-size: 20px;
-}
-
-.houseData .line-5 span:first-child{
-    margin-right: 20px;
-}
-
-.houseData .line-6 span:first-child{
-    margin-right: 20px;
-}
-
-.houseData .line-6 span:last-child{
+.float-right {
     float: right;
 }
 
-.houseData .line-6 span a {
-    text-decoration: none;
-    color: grey;
+.part-title {
+    font-size: 22px;
 }
 
-.houseData .line-7 .subscribe {
-    background-color: #FFF9F4;
+.person-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.person-tag {
+    font-size: 14px;
+    padding: 2px;
+    border: 1px solid grey;
+    background-color: #f4f4f4;
+}
+
+.flex-align-center {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.houseData .line-7 .subscribe {
-    font-weight: bold;
-    padding: 5px 10px;
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.houseData .line-7 .subscribe div:first-child {
+/* HouseData */
+
+.font-size-10 {
     display: inline-block;
-    padding-left: 10px;
+    font-size: 22px;
+    transform: scale(0.5);
 }
 
-.houseData .line-7 .subscribe div:last-child {
-    width: 70px;
-    height: 30px;
-    line-height: 30px;
+.feedback {
+    display: flex;
+    padding: 10px 7px;
+    align-items: center;
+}
+
+.feedback-icon {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.house-title {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.publish-institution-icon {
+    display: flex;
+    align-items: center;
+}
+
+.qualification-icon {
+    display: flex;
+    align-items: center;
+}
+
+.highlight-attr-name {
+    color: grey;
+    font-size: 16px;
+}
+
+.highlight-attr-value {
+    color: #F75402;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FEF9F4;
+    padding: 10px 10px;
+}
+
+.subscribe-right {
+    border: 1px solid #F75402;
+    background-color: white;
+    padding: 5px;
     border-radius: 10px;
-    text-align: center;
-    display: inline-block;
-    border: 1px solid #FE5500;
 }
 
 /* HouseManager */
 
-.houseManager .title {
-    font-size: 24px;
-    margin-left: 20px;
+.highlight-font {
     font-weight: bold;
+    color: #F75402;
 }
 
-.houseManager .avatar {
-    margin: 10px 0;
-    height: 70px;
-    width: 70px;
-    border: 1px solid black;
+.lessen-font {
+    color: grey;
 }
 
-.houseManager .icon {
-    margin: 20px 0;
-    height: 50px;
+.no-border-tag {
+    font-size: 14px;
+    padding: 5px;
+    background-color: #f4f4f4;
+}
+
+.houseManager .msg-icon {
+    display: flex;
+    background-color: #FEF9F4;
     width: 50px;
-    border: 1px solid black;
-}
-
-.houseManager .details .info,
-.houseManager .details .credit {
-    margin-bottom: 8px;
-}
-
-.houseManager .details .info span:first-child{
-    font-size: 20px;
-    font-weight: bolder;
-    margin-right: 5px;
-}
-
-.houseManager .details .info span:last-child{
-    border: 1px solid grey;
-    background-color: #f4f4f4;
-    padding: 2px 4px;
-    border-radius: 5px;
-    color: grey;
-}
-
-.houseManager .details .credit span:first-child{
-    color: #FE5500;
-    font-weight: bold;
-    margin-right: 5px;
-}
-
-.houseManager .details .credit span:nth-child(2){
-    font-weight: bold;
-    border-right: 2px solid grey;
-    padding-right: 5px;
-    margin-right: 5px;
-}
-
-.houseManager .details .credit span:last-child {
-    font-weight: bold;
-    color: grey;
-}
-
-.houseManager .details .service span {
-    margin-right: 5px;
-    background-color: #f4f4f4;
-    padding: 2px 4px;
-    color: grey;
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* HouseTest */
 
-.houseTest .houseTest-top {
-    height: 80px;
-    line-height: 80px;
-    background-color: #FEF3DC;
-    padding: 0 28px;
-    border-radius: 5px 5px 0 0;
+.house-test-top {
+    height: 60px;
+    line-height: 60px;
+    background-color: #FFF3DA;
+    border-radius: 10px 10px 0 0;
 }
 
-.houseTest .houseTest-top span:first-child {
-    font-size: 24px;
-    color: brown;
-    font-weight: bolder;
-}
-
-.houseTest .houseTest-top span:nth-child(2) {
-    font-size: 24px;
-    color: #EEB488;
-    font-weight: bolder;
-}
-
-.houseTest .houseTest-top span:last-child {
-    float: right;
-    font-size: 20px;
-    color: brown;
-}
-
-.houseTest .houseTest-bottom {
-    background-color: white;
-    padding: 30px 0;
-}
-
-.houseTest .houseTest-bottom .line {
-    margin-bottom: 30px;
-}
-
-.houseTest .houseTest-bottom span a {
-    text-decoration: none;
-    color: grey;
-}
-
-.houseTest .houseTest-bottom .credit span:first-child {
-    background-color: black;
-    color: white;
-    padding: 7px;
-}
-
-.houseTest .houseTest-bottom .credit span:last-child {
-    background-color: #FED78D;
-    color: black;
-    padding: 7px;
-}
-
-.houseTest .houseTest-bottom .picture {
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 95px;
-    height: 95px;
-}
-
-.houseTest .houseTest-bottom .desc div:first-child {
+.house-test-top .special-font-1 {
+    color: #58320D;
     font-size: 25px;
     font-weight: bold;
 }
 
-.houseTest .houseTest-bottom .desc div:last-child {
-    margin-top: 10px;
-    color: grey;
+.house-test-top .special-font-2 {
+    color: #D48444;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.houseTest .houseTest-bottom .desc div:last-child span:last-child {
-    float: right;
+.house-test-top .special-font-3 {
+    color: #58320D;
+}
+
+.house-test-bottom {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.house-test-bottom .grade {
+    background-color: #333534;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.house-test-bottom .desc {
+    background-color: #FED78D;
+    padding: 5px;
+}
+
+.house-test-bottom .test-carousel {
+    margin-top: 10px;
+    border: 1px solid grey;
+    height: 200px;
 }
 
 /* HouseAssess */
 
-.houseAssess .houseAssess-top {
-    height: 80px;
-    line-height: 80px;
-    background-color: #FEF3DC;
-    padding: 0 28px;
-    border-radius: 5px 5px 0 0;
-    margin-top: 10px;
+.house-assess-top {
+    background-color: #FDE3C1;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 0;
 }
 
-.houseAssess .houseAssess-top div {
-    display: inline-block;
-}
-
-.houseAssess .houseAssess-top div:first-child {
-    /* border: 1px solid black; */
-    width: 40px;
-    height: 40px;
-}
-
-.houseAssess .houseAssess-top div:nth-child(2) {
+.house-assess-top .special-font-4 {
     color: #AF7528;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
-    margin-left: 10px;
 }
 
-.houseAssess .houseAssess-top span a {
-    color: #AF7528;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    float: right;
-}
-
-.houseAssess .houseAssess-bottom {
+.house-assess-bottom {
     background-color: white;
-    padding: 30px 0;
+    border-radius: 0 0 10px 10px;
 }
 
-.houseAssess .houseAssess-bottom .line-1 span:first-child {
-    font-size: 25px;
-    font-weight: bolder;
-}
-
-.houseAssess .houseAssess-bottom .line-1 div{
-    float: right;
-}
-
-.houseAssess .houseAssess-bottom .line-1 div span:first-child {
-    color: grey;
-    margin-right: 10px;
-    font-size: 22px;
-    font-weight: normal;
-}
-
-.houseAssess .houseAssess-bottom .line-1 div span:nth-child(2) {
-    font-weight: bolder;
-    font-size: 22px;
-    margin-right: 10px;
-}
-
-.houseAssess .houseAssess-bottom .line-1 div span:last-child {
-    color: grey;
-    margin-right: 20px;
-    font-size: 22px;
-}
-
-.houseAssess .houseAssess-bottom .line-1 div span:last-child a {
-    text-decoration: none;
-    color: grey;
-}
-
-.houseAssess .houseAssess-bottom .line-2,
-.houseAssess .houseAssess-bottom .line-3 {
-    margin: 0 20px;
-    margin-top: 15px;
-}
-
-.houseAssess .houseAssess-bottom .line-2 .title,
-.houseAssess .houseAssess-bottom .line-3 .title {
-    font-size: 22px;
-    color: grey;
-    margin-right: 10px;
-}
-
-.houseAssess .houseAssess-bottom .line-2 .value,
-.houseAssess .houseAssess-bottom .line-3 .value {
-    font-size: 22px;
-    margin-right: 10px;
-}
-
-.houseAssess .houseAssess-bottom .line-2 div {
+.special-box {
     display: inline-block;
-    border: 1px solid black;
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
-    background-color: #FE5500;
-}
-
-.houseAssess .houseAssess-bottom .line-2 span:last-child {
-    font-size: 22px;
-    color: #FE5500;
-}
-
-.houseAssess .houseAssess-bottom .icon {
-    width: 30px;
     height: 30px;
     line-height: 30px;
-    text-align: center;
-    background-color: #FE5500;
-    color: white;
-    font-weight: bolder;
-    border-radius: 5px;
 }
 
-/* HouseNeighbor */
+.black-font {
+    color: black;
+    font-weight: bold;    
+}
 
-.houseNeighbor .map {
-    margin-top: 15px;
-    border: 1px solid black;
-    height: 250px;
+.essence-tag {
+    background-color: #FDE3C1;
+    font-size: 14px;
+    padding: 5px;
+    color: #AF7528;
+}
+
+.comment {
+    line-height: 25px;
+}
+
+.question {
+    padding: 4px 4px;
+    background-color: #F75402;
+    color: white;
+    border-radius: 5px 0 5px 0;
+} 
+
+.answer {
+    color: grey;
+    font-size: 18px;
+}
+
+/* HouseNeighbor  */
+
+.map {
+    border: 1px solid grey;
+    height: 200px;
 }
 
 /* HousePrice */
 
-.housePrice .line-vertical {
-    border: 1px solid grey;
-    height: 60px;
-    width: 0;
-}
-
-.housePrice .figure {
-    background-color: #FED78D;
-    height: 250px;
-}
-
-/* HouseSource */
-
-/* HouseNeighborSource */
-
-.houseNeighborSource .more {
-    text-align: center;
-    height: 50px;
-    line-height: 50px;
+.price-sum {
     background-color: #f4f4f4;
 }
 
-.houseNeighborSource .more a {
-    text-decoration: none;
-    color: gray;
-}
 
-/* HouseFooter */
-
-.houseFooter .footer {
-    background-color: white;
-}
-
-.houseFooter .footer .online-contact {
-    background-color: #FE972B;
-    color: white;
-    width: 100px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.houseFooter .footer .phone-call {
-    background-color: #FC5601;
-    color: white;
-    width: 100px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.houseFooter .footer .online-contact a,
-.houseFooter .footer .phone-call a {
-    text-decoration: none;
-    color: white;
-}
 
 
 
