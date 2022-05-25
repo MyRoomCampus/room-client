@@ -100,9 +100,8 @@ export default function HouseAssess() {
           </Row>
           <Row className="padding-top-5">
             <Col xs={{ offset: 1, span: 22 }}>
-              <span className="comment">
-                楼下本来有一个超市卖早餐和杂货，最近对门又开了间罗森，更加便利。早餐有包子油条
-                ...
+              <span className="comment overflow-ignore-2">
+                楼下本来有一个超市卖早餐和杂货，最近对门又开了间罗森，更加便利。早餐有包子油条哈哈哈哈哈哈哈哈哈哈哈哈哈哈
               </span>
             </Col>
           </Row>
@@ -122,12 +121,14 @@ export default function HouseAssess() {
             </Col>
           </Row>
           <Row className="padding-top-20">
-            <Col xs={{ offset: 1, span: 22 }} className="flex-between">
-              <span className="question">问</span>
-              <span style={{ marginLeft: -20 }}>
-                小区物业一年给多少钱都管 ...{' '}
+            <Col xs={{ offset: 1, span: 22 }} className="flex-align-center">
+              <span className="question-icon">问</span>
+              <span className="question overflow-ignore-1">
+                小区物业一年给多少钱都管哈哈哈哈哈哈哈哈
               </span>
-              <span className="answer">31个回答</span>
+              <a href="https://www.google.com" className="link-style answer">
+                <span>31个回答</span>
+              </a>
             </Col>
           </Row>
         </Col>
