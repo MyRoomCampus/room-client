@@ -243,10 +243,16 @@
     padding: 5px;
 }
 
-.house-test-bottom .test-carousel {
-    margin-top: 10px;
-    border: 1px solid grey;
-    height: 200px;
+.landscape {
+    display: inline-block;
+    background-image: url("../../images/1.png");
+    width: 80px;
+    height: 80px;
+    background-size: 100%;
+}
+
+.landscape-desc {
+    display: block;
 }
 
 /* HouseAssess */
@@ -311,8 +317,10 @@
 /* HouseNeighbor  */
 
 .map {
-    border: 1px solid grey;
     height: 200px;
+    background-image: url("../../images/2.png");
+    background-size: cover;
+    background-position: center center;
 }
 
 /* HousePrice */
@@ -364,8 +372,11 @@
 }
 
 .line-chart {
-    border: 1px solid black;
-    height: 200px;
+    height: 180px;
+    background-image: url("../../images/3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 /* HouseSource */

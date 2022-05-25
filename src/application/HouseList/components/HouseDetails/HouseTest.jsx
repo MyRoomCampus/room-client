@@ -37,28 +37,24 @@ export default function HouseTest() {
               </span>
             </Col>
           </Row>
-          <Row className="margin-top-10 padding-bottom-15">
-            <Col xs={{ offset: 1, span: 22 }}>
-              <div className="test-carousel"></div>
+          <Row className="margin-top-10 padding-bottom-15 padding-top-20">
+            <Col xs={{ offset: 1, span: 5 }}>
+              <span className="landscape"></span>
+            </Col>
+            <Col xs={{ offset: 1, span: 16 }} className="padding-top-5">
+              <span className="landscape-desc attr-value">
+                北二环护城河畔，高品质商品房住宅。
+              </span>
+              <div className="flex-between padding-top-20">
+                <span className="landscape-tag highlight-attr-name">
+                  幸福敲门
+                </span>
+                <span className="see-more">. . .</span>
+              </div>
             </Col>
           </Row>
         </Col>
       </Row>
-
-      {/* <Row>
-        <Col xs={{ offset: 1, span: 5 }}>
-          <div className="picture"></div>
-        </Col>
-        <Col xs={{ span: 17 }}>
-          <div className="desc">
-            <div>北二环护城河畔，高品质商品房住宅。</div>
-            <div>
-              <span>幸福敲门</span>
-              <span>. . .</span>
-            </div>
-          </div>
-        </Col>
-      </Row> */}
     </div>
   );
 }
