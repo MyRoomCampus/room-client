@@ -6,7 +6,7 @@ import './index.css';
 export default function HouseFooter() {
   return (
     <div className="houseFooter">
-      <Row className="padding-top-10 padding-bottom-10">
+      <Row className="padding-top-10 padding-bottom-10 footer-before">
         <Col xs={{ offset: 1, span: 22 }}>
           <span className="highlight-attr-name" style={{ fontSize: 14 }}>
             免费声明：房源所示图片及其他信息仅供参考，购房时请以房本信息为准。

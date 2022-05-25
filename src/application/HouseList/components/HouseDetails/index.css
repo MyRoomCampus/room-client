@@ -381,8 +381,17 @@
 
 /* HouseFooter */
 
+.footer-before {
+    margin-bottom: 80px;
+}
+
 .footer {
     background-color: white;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom)) !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .white-small-font {
