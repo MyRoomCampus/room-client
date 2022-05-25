@@ -22,9 +22,9 @@ export default function HomeDetail() {
         <HouseAssess></HouseAssess>
         <HouseNeighbor></HouseNeighbor>
         <HousePrice></HousePrice>
-        {/* <HouseSource></HouseSource>
+        <HouseSource></HouseSource>
         <HouseNeighborSource></HouseNeighborSource>
-        <HouseFooter></HouseFooter> */}
+        <HouseFooter></HouseFooter>
       </Col>
     </Row>
   );

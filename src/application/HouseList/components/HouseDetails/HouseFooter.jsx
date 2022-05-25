@@ -1,30 +1,50 @@
 import React from 'react';
 import { Col, Row } from '@douyinfe/semi-ui';
+import { GirlAvatar, IDCardIcon } from './Icon';
 import './index.css';
 
 export default function HouseFooter() {
   return (
     <div className="houseFooter">
-      <Row className="margin-bottom-10">
+      <Row className="padding-top-10 padding-bottom-10">
         <Col xs={{ offset: 1, span: 22 }}>
-          <span className="attention">
+          <span className="highlight-attr-name" style={{ fontSize: 14 }}>
             免费声明：房源所示图片及其他信息仅供参考，购房时请以房本信息为准。
           </span>
         </Col>
       </Row>
-      <Row className="footer">
+      <Row className="padding-top-10 padding-bottom-10 flex-align-center footer">
         <Col xs={{ offset: 1, span: 4 }}>
-          <div className="avatar"></div>
+          <GirlAvatar></GirlAvatar>
         </Col>
-        <Col xs={{ span: 7 }}>
-          <div className="margin-top-15 margin-bottom-10"><span className="person-name">李梦</span></div>
-          <div><span className="desc">我爱我家我爱我爱</span></div>
-        </Col>
-        <Col xs={{ offset: 1, span: 5 }}>
-          <div className="online-contact"><a href="https://www.google.com">在线联系</a></div>
+        <Col xs={{ span: 8 }} className="padding-left-5">
+          <div className="flex-align-center">
+            <span className="person-name">李梦</span>
+            <IDCardIcon></IDCardIcon>
+          </div>
+          <div className="padding-top-10">
+            <span className="highlight-attr-name">我爱我爱我家....</span>
+          </div>
         </Col>
         <Col xs={{ span: 5 }}>
-          <div className="phone-call"><a href="https://www.google.com">电话咨询</a></div>
+          <div className="online-contact">
+            <a
+              href="https://www.google.com"
+              className="link-style white-small-font"
+            >
+              在线联系
+            </a>
+          </div>
+        </Col>
+        <Col xs={{ span: 5 }} className="padding-left-5">
+          <div className="phone-call">
+            <a
+              href="https://www.google.com"
+              className="link-style white-small-font"
+            >
+              电话咨询
+            </a>
+          </div>
         </Col>
       </Row>
     </div>

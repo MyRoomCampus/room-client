@@ -112,13 +112,10 @@ export default function HouseAssess() {
             </Col>
           </Row>
           <Row className="padding-top-10">
-            <Col xs={{ offset: 1, span: 22 }}>
+            <Col xs={{ offset: 1, span: 22 }} className="flex-between">
               <span className="part-title">大家都在问（20）</span>
               <span>
-                <a
-                  href="https://www.google.com"
-                  className="link-style float-right"
-                >
+                <a href="https://www.google.com" className="link-style">
                   查看全部 {'>'}
                 </a>
               </span>

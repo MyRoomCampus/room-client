@@ -299,10 +299,90 @@
 
 .price-sum {
     background-color: #f4f4f4;
+    padding: 20px 0;   
 }
 
+.price-sum-left,
+.price-sum-right {
+    width: 50%;
+    text-align: center;
+}
 
+.price-attr-name {
+    display: block;
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
 
+.price-attr-value-1 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.price-attr-value-2 {
+    font-size: 14px;
+}
+
+.price-down-icon {
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid green;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.price-up-icon {
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid red;
+}
+
+.line-chart {
+    border: 1px solid black;
+    height: 200px;
+}
+
+/* HouseSource */
+
+/* HouseNeighborSource */
+
+.more-source {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* HouseFooter */
+
+.footer {
+    background-color: white;
+}
+
+.white-small-font {
+    color: white;
+    font-size: 14px;
+}
+
+.online-contact {
+    border-radius: 20px;
+    background-color: #FD972A;
+    padding: 7px;
+    text-align: center;
+}
+
+.phone-call {
+    border-radius: 20px;
+    background-color: #FC5601;
+    padding: 7px;
+    text-align: center;
+}
 
 
 

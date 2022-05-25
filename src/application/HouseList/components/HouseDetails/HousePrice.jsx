@@ -4,31 +4,30 @@ import './index.css';
 
 export default function HousePrice() {
   return (
-    <div className="part housePrice">
-      <Row className="margin-bottom-10">
+    <div className="part housePrice padding-bottom-15">
+      <Row className="padding-top-20">
         <Col xs={{ offset: 1, span: 23 }}>
-          <span className="big-font-size">价格走势</span>
+          <span className="part-title">价格走势</span>
         </Col>
       </Row>
-      <Row className="margin-bottom-10">
-        <Col xs={{ offset: 1, span: 10 }}>
-          <div className="margin-bottom-10 title">12月小区均价</div>
-          <div className="value">95591元/平</div>
-        </Col>
-        <Col xs={{ span: 1 }}>
-          <div className="line-vertical"></div>
-        </Col>
-        <Col xs={{ offset: 1, span: 10 }}>
-          <div className="margin-bottom-10 title">比上月</div>
-          <div className="value">
-            0.43%<div className="icon"></div>
+      <Row className="padding-top-20">
+        <Col xs={{ offset: 1, span: 22 }} className="price-sum flex-between">
+          <div className="price-sum-left border-right">
+            <span className="price-attr-name">12月小区均价</span>
+            <span className="price-attr-value-1">95591</span>
+            <span className="price-attr-value-2">元/平</span>
+          </div>
+          <div className="price-sum-right">
+            <span className="price-attr-name">比上月</span>
+            <span className="price-attr-value-1">0.43</span>
+            <span className="price-attr-value-2">%</span>
+            <span className="price-down-icon"></span>
           </div>
         </Col>
       </Row>
-      <hr className="hr-style" />
-      <Row>
+      <Row className="padding-top-10">
         <Col xs={{ offset: 1, span: 22 }}>
-          <div className="figure"></div>
+          <div className="line-chart"></div>
         </Col>
       </Row>
     </div>
