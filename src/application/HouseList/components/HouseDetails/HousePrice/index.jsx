@@ -6,13 +6,13 @@ import './style.css';
 export default function HousePrice() {
   return (
     <div className="part housePrice padding-bottom-15">
-      <Row className="padding-top-20">
-        <Col xs={{ offset: 1, span: 23 }}>
+      <Row className="padding-top-10">
+        <Col xs={{ span: 24 }}>
           <span className="part-title">价格走势</span>
         </Col>
       </Row>
       <Row className="padding-top-20">
-        <Col xs={{ offset: 1, span: 22 }} className="price-sum flex-between">
+        <Col xs={{ span: 24 }} className="price-sum flex-between">
           <div className="price-sum-left border-right">
             <span className="price-attr-name">12月小区均价</span>
             <span className="price-attr-value-1">95591</span>
@@ -27,7 +27,7 @@ export default function HousePrice() {
         </Col>
       </Row>
       <Row className="padding-top-10">
-        <Col xs={{ offset: 1, span: 22 }}>
+        <Col xs={{ span: 24 }}>
           <div className="line-chart"></div>
         </Col>
       </Row>

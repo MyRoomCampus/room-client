@@ -6,28 +6,28 @@ import './style.css';
 export default function HouseTest() {
   return (
     <div className="houseTest margin-top-10 padding-bottom-10">
-      <Row className="house-test-top">
-        <Col xs={{ offset: 1, span: 7 }}>
-          <span className="special-font-1">踩盘</span>
+      <Row className="house-test-top flex-nowrap">
+        <Col xs={{ span: 9 }}>
+          <span className="special-font-1 margin-left-15">踩盘</span>
           <span className="special-font-2">测评</span>
         </Col>
-        <Col xs={{ offset: 1, span: 14 }}>
-          <span className="float-right special-font-3">
+        <Col xs={{ span: 15 }}>
+          <span className="float-right special-font-3 margin-right-15">
             全信息 · 真踩盘 · 深解读
           </span>
         </Col>
       </Row>
-      <Row className="house-test-bottom">
+      <Row className="house-test-bottom padding-0-15">
         <Col xs={{ span: 24 }}>
-          <Row className="padding-top-20">
-            <Col xs={{ offset: 1, span: 6 }}>
+          <Row className="padding-top-20 flex-nowrap">
+            <Col>
               <span className="grade">9.6分</span>
               <span className="desc">优秀</span>
             </Col>
-            <Col xs={{ span: 8 }}>
+            <Col className="margin-left-15">
               <span style={{ fontSize: 15 }}>“本楼盘价值分析”</span>
             </Col>
-            <Col xs={{ offset: 1, span: 7 }}>
+            <Col style={{ marginLeft: 'auto' }}>
               <span>
                 <a
                   href="https://www.google.com"
@@ -38,19 +38,23 @@ export default function HouseTest() {
               </span>
             </Col>
           </Row>
-          <Row className="margin-top-10 padding-bottom-15 padding-top-20">
-            <Col xs={{ offset: 1, span: 5 }}>
+          <Row
+            className="margin-top-10 padding-bottom-15 padding-top-20 flex-nowrap"
+            type="flex"
+          >
+            <Col>
               <span className="landscape"></span>
             </Col>
-            <Col xs={{ offset: 1, span: 16 }} className="padding-top-5">
-              <span className="landscape-desc attr-value">
+            <Col
+              style={{ flexGrow: 1 }}
+              className="padding-top-5 margin-left-15 landscape-desc-tag"
+            >
+              <span className="attr-value">
                 北二环护城河畔，高品质商品房住宅。
               </span>
-              <div className="flex-between padding-top-20">
-                <span className="landscape-tag highlight-attr-name">
-                  幸福敲门
-                </span>
-                <span className="see-more">. . .</span>
+              <div className="landscape-tag">
+                <span className="highlight-attr-name">幸福敲门</span>
+                <span className="see-more">...</span>
               </div>
             </Col>
           </Row>

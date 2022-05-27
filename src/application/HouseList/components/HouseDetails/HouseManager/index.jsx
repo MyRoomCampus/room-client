@@ -8,15 +8,15 @@ export default function HouseManager() {
   return (
     <div className="part houseManager padding-bottom-15">
       <Row className="padding-top-10">
-        <Col xs={{ offset: 1, span: 22 }}>
+        <Col xs={{ span: 22 }}>
           <span className="part-title">推荐经纪人</span>
         </Col>
       </Row>
       <Row className="padding-top-20 flex-align-center">
-        <Col xs={{ offset: 1, span: 3 }}>
+        <Col>
           <GirlAvatar></GirlAvatar>
         </Col>
-        <Col xs={{ offset: 1, span: 11 }} className="padding-left-5">
+        <Col className="margin-left-15">
           <div className="flex-align-center">
             <span className="person-name">李梦</span>
             <span className="person-tag margin-left-5">我爱我家</span>
@@ -36,13 +36,11 @@ export default function HouseManager() {
             </span>
           </div>
         </Col>
-        <Col xs={{ span: 3 }}>
+        <Col className="flex-align-center" style={{ marginLeft: 'auto' }}>
           <a href="https://www.google.com" className="msg-icon">
             <MessageIcon></MessageIcon>
           </a>
-        </Col>
-        <Col xs={{ offset: 1, span: 3 }}>
-          <a href="https://www.google.com" className="msg-icon">
+          <a href="https://www.google.com" className="msg-icon margin-left-15">
             <PhoneIcon></PhoneIcon>
           </a>
         </Col>

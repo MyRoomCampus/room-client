@@ -48,7 +48,13 @@
     background-size: 100%;
 }
 
-.landscape-desc {
-    display: block;
+.landscape-desc-tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.landscape-tag {
+    display: flex;
+    justify-content: space-between;
+}
