@@ -14,6 +14,10 @@
     margin-left: 5px;
 }
 
+.margin-left-15 {
+    margin-left: 15px;
+}
+
 .margin-left--5 {
     margin-left: -5px;
 }
@@ -45,7 +49,6 @@
 .tag-span {
     background-color: #EEB488;
     border-radius: 5px;
-    display: flex;
     padding: 10px 7px;
 }
 
@@ -114,38 +117,10 @@
     -webkit-line-clamp: 2;
 }
 
-/* HouseData */
-
 .font-size-10 {
     display: inline-block;
     font-size: 22px;
     transform: scale(0.5);
-}
-
-.feedback {
-    display: flex;
-    padding: 10px 7px;
-    align-items: center;
-}
-
-.feedback-icon {
-    display: inline-block;
-    padding-right: 5px;
-}
-
-.house-title {
-    font-size: 28px;
-    font-weight: bolder;
-}
-
-.publish-institution-icon {
-    display: flex;
-    align-items: center;
-}
-
-.qualification-icon {
-    display: flex;
-    align-items: center;
 }
 
 .highlight-attr-name {
@@ -159,23 +134,6 @@
     font-size: 25px;
 }
 
-.subscribe {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FEF9F4;
-    padding: 10px 10px;
-}
-
-.subscribe-right {
-    border: 1px solid #F75402;
-    background-color: white;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-/* HouseManager */
-
 .highlight-font {
     font-weight: bold;
     color: #F75402;
@@ -185,244 +143,12 @@
     color: grey;
 }
 
-.no-border-tag {
-    font-size: 14px;
-    padding: 5px;
-    background-color: #f4f4f4;
-}
-
-.houseManager .msg-icon {
+.flex-nowrap {
     display: flex;
-    background-color: #FEF9F4;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    justify-content: center;
-    align-items: center;
+    white-space: nowrap;
 }
 
-/* HouseTest */
 
-.house-test-top {
-    height: 60px;
-    line-height: 60px;
-    background-color: #FFF3DA;
-    border-radius: 10px 10px 0 0;
-}
-
-.house-test-top .special-font-1 {
-    color: #58320D;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.house-test-top .special-font-2 {
-    color: #D48444;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.house-test-top .special-font-3 {
-    color: #58320D;
-}
-
-.house-test-bottom {
-    background-color: white;
-    border-radius: 0 0 10px 10px;
-}
-
-.house-test-bottom .grade {
-    background-color: #333534;
-    padding: 5px;
-    color: white;
-    font-weight: bold;
-}
-
-.house-test-bottom .desc {
-    background-color: #FED78D;
-    padding: 5px;
-}
-
-.landscape {
-    display: inline-block;
-    background-image: url("../../images/1.png");
-    width: 80px;
-    height: 80px;
-    background-size: 100%;
-}
-
-.landscape-desc {
-    display: block;
-}
-
-/* HouseAssess */
-
-.house-assess-top {
-    background-color: #FDE3C1;
-    border-radius: 10px 10px 0 0;
-    padding: 15px 0;
-}
-
-.house-assess-top .special-font-4 {
-    color: #AF7528;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.house-assess-bottom {
-    background-color: white;
-    border-radius: 0 0 10px 10px;
-}
-
-.special-box {
-    display: inline-block;
-    height: 30px;
-    line-height: 30px;
-}
-
-.black-font {
-    color: black;
-    font-weight: bold;    
-}
-
-.essence-tag {
-    background-color: #FDE3C1;
-    font-size: 14px;
-    padding: 5px;
-    color: #AF7528;
-}
-
-.comment {
-    line-height: 25px;
-}
-
-.question-icon {
-    padding: 4px 4px;
-    background-color: #F75402;
-    color: white;
-    border-radius: 5px 0 5px 0;
-} 
-
-.question {
-    padding-left: 5px;
-    width: 60%;
-}
-
-.answer {
-    color: grey;
-    font-size: 18px;
-    margin-left: auto;
-}
-
-/* HouseNeighbor  */
-
-.map {
-    height: 200px;
-    background-image: url("../../images/2.png");
-    background-size: cover;
-    background-position: center center;
-}
-
-/* HousePrice */
-
-.price-sum {
-    background-color: #f4f4f4;
-    padding: 20px 0;   
-}
-
-.price-sum-left,
-.price-sum-right {
-    width: 50%;
-    text-align: center;
-}
-
-.price-attr-name {
-    display: block;
-    color: grey;
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-
-.price-attr-value-1 {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 5px;
-}
-
-.price-attr-value-2 {
-    font-size: 14px;
-}
-
-.price-down-icon {
-    margin-left: 5px;
-    width: 0;
-    height: 0;
-    border-top: 5px solid green;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-}
-
-.price-up-icon {
-    margin-left: 5px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid red;
-}
-
-.line-chart {
-    height: 180px;
-    background-image: url("../../images/3.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-/* HouseSource */
-
-/* HouseNeighborSource */
-
-.more-source {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-/* HouseFooter */
-
-.footer-before {
-    margin-bottom: 80px;
-}
-
-.footer {
-    background-color: white;
-    padding-bottom: calc(10px + env(safe-area-inset-bottom)) !important;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-.white-small-font {
-    color: white;
-    font-size: 14px;
-}
-
-.online-contact {
-    border-radius: 20px;
-    background-color: #FD972A;
-    padding: 7px;
-    text-align: center;
-}
-
-.phone-call {
-    border-radius: 20px;
-    background-color: #FC5601;
-    padding: 7px;
-    text-align: center;
-}
 
 
 

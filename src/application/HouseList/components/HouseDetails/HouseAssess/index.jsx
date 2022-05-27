@@ -1,11 +1,12 @@
 import React from 'react';
 import { Col, Row } from '@douyinfe/semi-ui';
-import { ChampionIcon, LineChartIcon, BoyAvatar } from './Icon';
-import './index.css';
+import { ChampionIcon, LineChartIcon, BoyAvatar } from '../Icon';
+import '../index.css';
+import './style.css';
 
 export default function HouseAssess() {
   return (
-    <div className="houseAssess padding-bottom-15">
+    <div className="houseAssess padding-bottom-5">
       <Row className="house-assess-top">
         <Col xs={{ offset: 1, span: 15 }} className="flex-align-center">
           <ChampionIcon></ChampionIcon>
@@ -120,7 +121,7 @@ export default function HouseAssess() {
               </span>
             </Col>
           </Row>
-          <Row className="padding-top-20">
+          <Row className="padding-top-20 padding-bottom-10">
             <Col xs={{ offset: 1, span: 22 }} className="flex-align-center">
               <span className="question-icon">问</span>
               <span className="question overflow-ignore-1">

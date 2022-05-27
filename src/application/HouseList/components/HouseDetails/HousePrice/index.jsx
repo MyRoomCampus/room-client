@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Row } from '@douyinfe/semi-ui';
-import './index.css';
+import '../index.css';
+import './style.css';
 
 export default function HousePrice() {
   return (

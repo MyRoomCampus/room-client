@@ -1,15 +1,15 @@
 import React from 'react';
+import { Col, Row } from '@douyinfe/semi-ui';
 import HouseCarousel from './HouseCarousel';
 import HouseData from './HouseData';
 import HouseManager from './HouseManager';
 import HouseTest from './HouseTest';
 import HouseAssess from './HouseAssess';
-import HouseNeighbor from './HouseNeighbor.jsx';
+import HouseNeighbor from './HouseNeighbor';
 import HousePrice from './HousePrice';
 import HouseSource from './HouseSource';
 import HouseNeighborSource from './HouseNeighborSource';
 import HouseFooter from './HouseFooter';
-import { Col, Row } from '@douyinfe/semi-ui';
 
 export default function HomeDetail() {
   return (

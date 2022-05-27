@@ -1,7 +1,8 @@
 import React from 'react';
 import { Col, Row } from '@douyinfe/semi-ui';
-import HomeCard from '../HouseCards/HouseCard';
-import './index.css';
+import HomeCard from '../../HouseCards/HouseCard';
+import '../index.css';
+import './style.css';
 
 export default function HouseNeighborSource() {
   return (

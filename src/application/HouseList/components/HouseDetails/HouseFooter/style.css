@@ -1,0 +1,33 @@
+/* HouseFooter */
+
+.footer-before {
+    margin-bottom: 80px;
+}
+
+.footer {
+    background-color: white;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom)) !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.white-small-font {
+    color: white;
+    font-size: 14px;
+}
+
+.online-contact {
+    border-radius: 20px;
+    background-color: #FD972A;
+    padding: 7px;
+    text-align: center;
+}
+
+.phone-call {
+    border-radius: 20px;
+    background-color: #FC5601;
+    padding: 7px;
+    text-align: center;
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Col, Row } from '@douyinfe/semi-ui';
-import { GirlAvatar, IDCardIcon } from './Icon';
-import './index.css';
+import { GirlAvatar, IDCardIcon } from '../Icon';
+import '../index.css';
+import './style.css';
 
 export default function HouseFooter() {
   return (

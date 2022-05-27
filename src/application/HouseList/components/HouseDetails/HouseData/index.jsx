@@ -4,20 +4,29 @@ import {
   FeedbackIcon,
   PublishInstitutionIcon,
   QualificationIcon,
-} from './Icon';
-import './index.css';
+} from '../Icon';
+import '../index.css';
+import './style.css';
 
 export default function HouseData() {
   return (
     <div className="part houseData">
-      <Row className="padding-top-10">
-        <Col xs={{ span: 6 }}>
+      <Row
+        className="padding-top-10"
+        type="flex"
+        style={{ flexWrap: 'nowrap' }}
+      >
+        {/* <Col xs={{ span: 12 }} className="flex-nowrap">
+          <span className="font-size-10 tag-span">楼龄新</span>
+          <span className="font-size-10 tag-span">近地铁</span>
+        </Col> */}
+        <Col>
           <span className="font-size-10 tag-span">楼龄新</span>
         </Col>
-        <Col xs={{ span: 6 }}>
+        <Col>
           <span className="font-size-10 tag-span">近地铁</span>
         </Col>
-        <Col xs={{ offset: 6, span: 6 }}>
+        <Col xs={{ span: 5 }} style={{ marginLeft: 'auto' }}>
           <a href="https://www.google.com" className="link-style feedback">
             <div className="feedback-icon">
               <FeedbackIcon></FeedbackIcon>

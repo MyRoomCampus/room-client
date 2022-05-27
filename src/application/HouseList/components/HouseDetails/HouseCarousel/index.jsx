@@ -1,10 +1,15 @@
 import React from 'react';
 import { Carousel } from '@douyinfe/semi-ui';
+import './style.css';
 
 export default class HouseCarousel extends React.Component {
   constructor(props) {
     super(props);
-    this.imgList = ['/house-1.jpg', '/house-2.jpg', '/house-3.jpg'];
+    this.imgList = [
+      '/houseDetail/house-2.jpg',
+      '/houseDetail/house-3.jpg',
+      '/houseDetail/house-1.jpg',
+    ];
     this.textList = [];
     this.state = {
       activeIndex: 0,

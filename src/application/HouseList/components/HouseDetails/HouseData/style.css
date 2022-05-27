@@ -1,0 +1,43 @@
+/* HouseData */
+
+.feedback {
+    display: flex;
+    padding: 10px 7px;
+    align-items: center;
+    justify-content: end;
+}
+
+.feedback-icon {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.house-title {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.publish-institution-icon {
+    display: flex;
+    align-items: center;
+}
+
+.qualification-icon {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FEF9F4;
+    padding: 10px 10px;
+}
+
+.subscribe-right {
+    border: 1px solid #F75402;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
