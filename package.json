@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "ahooks": "^3.4.0",
     "reset-css": "^5.0.1"
   }
 }
