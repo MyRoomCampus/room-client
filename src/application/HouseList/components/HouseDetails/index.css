@@ -1,7 +1,15 @@
+/* Variable */
+
+:root {
+    --part-bg-color: white;
+    --part-text-color: #343535;
+}
+
 /* common */
 
 .part {
-    background-color: white;
+    background-color: var(--part-bg-color);
+    color: var(--part-text-color);
     border-radius: 10px;
     margin-top: 10px;
     padding: 10px 20px;
@@ -165,7 +173,18 @@
 
 
 
+/* Dark Mode */
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --part-bg-color: rgb(22, 22, 26);
+        --part-text-color: rgb(249, 249, 249);
+    }
+
+    body {
+        background-color: rgb(35, 36, 41);
+    }
+}
 
 
 
