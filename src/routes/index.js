@@ -4,6 +4,9 @@ import DemoPage from "../application/DemoPage";
 import Home from "../application/Home";
 import HouseList from "../application/HouseList";
 import UserInfo from "../application/UserInfo";
+import Register from "../application/Register";
+import Login from "../application/Login"
+
 const routes = [
   {
     path: "/",
@@ -24,6 +27,14 @@ const routes = [
       {
         path: "/demo",
         element: <DemoPage />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
     ],
   },
