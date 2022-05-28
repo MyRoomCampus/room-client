@@ -1,16 +1,14 @@
 import React,{useEffect,useState} from "react";
 import { Avatar } from '@douyinfe/semi-ui';
 import { Input,Button } from '@douyinfe/semi-ui';
-import { useDispatch,useSelector } from "react-redux";
+// import { useDispatch } from "react-redux";
 import { useNavigate } from 'react-router-dom';
 import cookie from "react-cookies";
-import { logOut } from "../../store/slice/loginSlice";
 import './style.css'
 
 function UserInfo(props) {
   const [username,setUsername] = useState('')
   const [password,setPassword] = useState('')
-  const dispatch = useDispatch();
     console.log("iii");
     function logout(){
       if(window.confirm('确定退出登录吗？')){

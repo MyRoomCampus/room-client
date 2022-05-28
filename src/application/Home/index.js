@@ -13,6 +13,12 @@ function Home(props) {
       <NavLink style={{ color: "green" }} to="/demo">
         异步接口测试页面Tab
       </NavLink>
+      <NavLink style={{ color: "green" }} to="/register">
+        注册
+      </NavLink>
+      <NavLink style={{ color: "pink" }} to="/login">
+        登录
+      </NavLink>
       <Outlet />
     </>
   );
