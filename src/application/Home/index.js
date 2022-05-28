@@ -1,10 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router";
 import { NavLink } from "react-router-dom";
+import NavBar from "../NavBar";
+import './style.css'
 function Home(props) {
   return (
-    <>
-      <NavLink style={{ marginRight: "10px", color: "red" }} to="/houselist">
+    <div className="home_container">
+    
+      {/* <NavLink style={{ marginRight: "10px", color: "red" }} to="/houselist">
         房屋信息Tab
       </NavLink>
       <NavLink style={{ marginRight: "10px", color: "blue" }} to="/userinfo">
@@ -18,9 +21,10 @@ function Home(props) {
       </NavLink>
       <NavLink style={{ color: "pink" }} to="/login">
         登录
-      </NavLink>
+      </NavLink> */}
       <Outlet />
-    </>
+      <NavBar/>
+    </div>
   );
 }
 

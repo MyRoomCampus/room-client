@@ -1,0 +1,15 @@
+.navContianer{
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    width: 50%;
+
+}
+.navBar{
+    text-align: center;
+    flex: 1 0 auto;
+    
+}
