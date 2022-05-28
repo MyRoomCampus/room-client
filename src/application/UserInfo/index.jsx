@@ -20,16 +20,7 @@ function UserInfo(props) {
         history('/login')
       }
     }
-    // const { userData } = useSelector((state) => {
-    //   return {
-    //     userData: state.loginData.userData,
-    //   };
-    // });
-    // let userData;
-    // console.log(userData)
-      // 注册成功后返回重定向的路由（重定向到主页/home）
-    // setUsername('e')
-    // setPassword('hhh')
+
     const history = useNavigate();
     useEffect(() => {
       console.log('userinfo',cookie.load('userData'));
@@ -45,24 +36,6 @@ function UserInfo(props) {
         console.log('@@mounted_password',password);
       }
     },[])
-    // useEffect(() => {
-    //   // console.log("@@@userData 的值", userData);
-    //   // // 获取用户cookie
-
-    //   if(username==='' && password===''){
-    //     alert('请前往登录！')
-    //     history('/login')
-    //   }
-    // },[username,password]);
-
-    // useEffect(() => {
-    //   return () => {
-    //       //执行的为componentWillUnmount
-    //       console.log('执行的为componentWillUnmount');
-    //       userData = undefined;
-    //   }
-    // },[])
-
 
   return (
     <>

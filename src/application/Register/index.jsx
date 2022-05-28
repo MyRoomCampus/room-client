@@ -1,4 +1,4 @@
-import React, { Component,useState,useEffect } from 'react'
+import React, { useState } from 'react'
 import { Input,Button } from '@douyinfe/semi-ui';
 import { IconUnlock,IconUser,IconSafe } from '@douyinfe/semi-icons';
 import Welcome from '../Welcome';
@@ -8,72 +8,8 @@ import { useNavigate } from 'react-router-dom';
 
 import "./style.css"
 
-// export default class Register extends Component {
-  
-//   state = {
-//     username:'',
-//     password:'',
-//     passwordConfirm:''
-//   }
-//   handleSubmit = e => {
-//     e.preventDefault();
-//     const user = {...this.state}
-//     console.log(this.state)
-    
-//     this.props.dispatch(asyncRegister(user));
-//     console.log('hhhh');
-//   }
-//   handleChange = (value,e)=>{
-//     // console.log(e.target.name);
-//     this.setState({
-//       [e.target.name]:value
-//     })
-//   }
-//   render() {
-//     const {username,password,passwordConfirm} = this.state
-//     return (
-//       <form onSubmit={this.handleSubmit}>
-//           <div className="login_content">
-//           <Welcome/>
-//           <br/><br/>
-//           <Input 
-//             placeholder='请输入用户名' 
-//             prefix={<IconUser />}
-//             name="username"
-//             defaultValue={username}
-//             onChange={this.handleChange}
-//             ></Input>
-//           <br/><br/>
-//           <Input 
-//             mode="password"  
-//             placeholder='请输入密码' 
-//             prefix={<IconUnlock />}
-//             name = "password"
-//             defaultValue={password}
-//             onChange={this.handleChange}
-//             ></Input>
-//           <br/><br/>
-//           <Input 
-//             mode="password"  
-//             placeholder='请再次确认密码' 
-//             prefix={<IconSafe />}
-//             name="property"
-//             defaultValue={passwordConfirm}
-//             onChange={this.handleChange}
-//             ></Input>
-//           <br/><br/>
-//           <Button theme='solid' type='primary' style={{ marginRight: 8 }} block htmlType="submit">注册</Button>
-//         </div>
-//       </form>
-//     )
-//   }
-// }
-
 function Register(){
-  // const [user,setUser] = useState({username:'',password:'',passwordConfirm:''})
-  // useEffect(() => {
-  //   console.log("@@@1user 的值", user);
-  // },[user]);
+
   const [username,setUsername] = useState('')
   const [password,setPassword] = useState('')
   const [passwordConfirm,setPasswordConfirm] = useState('')
