@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel } from '@douyinfe/semi-ui';
+import { Carousel, Skeleton } from '@douyinfe/semi-ui';
 import './style.css';
 
 export default class HouseCarousel extends React.Component {
@@ -37,28 +37,35 @@ export default class HouseCarousel extends React.Component {
     };
 
     const { activeIndex } = this.state;
+    const { loading } = this.props;
 
     return (
       <div>
-        <Carousel
-          style={style}
-          activeIndex={activeIndex}
-          autoPlay={false}
-          theme="dark"
-          onChange={this.onChange.bind(this)}
-        >
-          {this.imgList.map((src, index) => {
-            return (
-              <div
-                key={index}
-                style={{
-                  backgroundSize: 'cover',
-                  backgroundImage: `url(${src})`,
-                }}
-              ></div>
-            );
-          })}
-        </Carousel>
+        {loading ? (
+          <Skeleton.Button
+            style={{ width: '100%', height: '400px' }}
+          ></Skeleton.Button>
+        ) : (
+          <Carousel
+            style={style}
+            activeIndex={activeIndex}
+            autoPlay={false}
+            theme="dark"
+            onChange={this.onChange.bind(this)}
+          >
+            {this.imgList.map((src, index) => {
+              return (
+                <div
+                  key={index}
+                  style={{
+                    backgroundSize: 'cover',
+                    backgroundImage: `url(${src})`,
+                  }}
+                ></div>
+              );
+            })}
+          </Carousel>
+        )}
       </div>
     );
   }

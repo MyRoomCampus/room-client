@@ -19,16 +19,16 @@ export default function HomeDetail() {
   return (
     <Row>
       <Col xs={24} lg={{ span: 12, offset: 6 }}>
-        <HouseCarousel></HouseCarousel>
+        <HouseCarousel loading={loading}></HouseCarousel>
         <HouseData data={data} loading={loading}></HouseData>
-        <HouseManager></HouseManager>
-        <HouseTest></HouseTest>
-        <HouseAssess></HouseAssess>
-        <HouseNeighbor></HouseNeighbor>
-        <HousePrice></HousePrice>
-        <HouseSource></HouseSource>
-        <HouseNeighborSource></HouseNeighborSource>
-        <HouseFooter></HouseFooter>
+        <HouseManager loading={loading}></HouseManager>
+        <HouseTest loading={loading}></HouseTest>
+        <HouseAssess loading={loading}></HouseAssess>
+        <HouseNeighbor loading={loading}></HouseNeighbor>
+        <HousePrice loading={loading}></HousePrice>
+        <HouseSource loading={loading}></HouseSource>
+        <HouseNeighborSource loading={loading}></HouseNeighborSource>
+        <HouseFooter loading={loading}></HouseFooter>
       </Col>
     </Row>
   );

@@ -44,7 +44,7 @@ export default function HouseData(props) {
         )}
         <Col xs={{ span: 8 }} style={{ marginLeft: 'auto' }}>
           {loading ? (
-            <Skeleton.Button></Skeleton.Button>
+            <Skeleton.Button style={{ marginLeft: 'auto' }}></Skeleton.Button>
           ) : (
             <a href="https://www.google.com" className="link-style feedback">
               <div className="feedback-icon">
@@ -269,14 +269,18 @@ export default function HouseData(props) {
       </div>
       <Row className="padding-top-20 padding-bottom-15">
         <Col xs={{ span: 24 }}>
-          <div className="subscribe">
-            <div className="subscribe-left">订阅房源动态，掌握一手信息</div>
-            <div className="subscribe-right">
-              <a href="https://www.google.com" className="link-style">
-                去订阅
-              </a>
+          {loading ? (
+            <Skeleton.Button style={{ width: '100%' }}></Skeleton.Button>
+          ) : (
+            <div className="subscribe">
+              <div className="subscribe-left">订阅房源动态，掌握一手信息</div>
+              <div className="subscribe-right">
+                <a href="https://www.google.com" className="link-style">
+                  去订阅
+                </a>
+              </div>
             </div>
-          </div>
+          )}
         </Col>
       </Row>
     </div>
