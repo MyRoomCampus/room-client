@@ -20,7 +20,7 @@ const routes = [
         element: <HouseList />,
       },
       {
-        path: "/houseDetails",
+        path: "/houseDetails/:id",
         element: <HouseDetails />,
       },
       {
