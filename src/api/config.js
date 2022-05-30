@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // 修改baseUrl为服务器IP
-export const baseUrl = "https://music-api-five.vercel.app";
+export const baseUrl = "https://api.saicem.top";
 
 //axios 的实例及拦截器配置
 const axiosInstance = axios.create({
