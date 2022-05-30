@@ -151,8 +151,12 @@ export default function HouseAssess(props) {
                 <>
                   <div className="flex-align-center">
                     <span className="person-name">贾平</span>
-                    <span className="no-border-tag lessen-font">小区业主</span>
-                    <span className="essence-tag lessen-font">精华</span>
+                    <span className="no-border-tag lessen-font margin-left-5">
+                      小区业主
+                    </span>
+                    <span className="essence-tag lessen-font margin-left-5">
+                      精华
+                    </span>
                   </div>
                   <div className="flex-align-center padding-top-5">
                     <span>10-07</span>

@@ -53,3 +53,9 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+@media (prefers-color-scheme: dark) {
+    .price-sum {
+        background-color: rgb(35, 36, 41);
+    }
+}

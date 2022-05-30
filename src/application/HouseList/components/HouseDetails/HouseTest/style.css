@@ -58,3 +58,22 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (prefers-color-scheme: dark) {
+    .house-test-top {
+        background-color: rgb(22, 22, 26);
+    }
+
+    .house-test-bottom {
+        background-color: #2D3F54;
+    }
+
+    .house-test-top .special-font-2 {
+        color: #58320D;
+    }
+
+    .house-test-bottom .desc {
+        background-color: #58320D;
+        color: #AF7528;
+    }
+}

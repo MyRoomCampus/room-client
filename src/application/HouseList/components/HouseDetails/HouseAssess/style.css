@@ -56,3 +56,22 @@
     font-size: 18px;
     margin-left: auto;
 }
+
+@media (prefers-color-scheme: dark) {
+    .house-assess-top {
+        background-color: rgb(22, 22, 26);
+    }
+
+    .house-assess-bottom {
+        background-color: #2D3F54;
+    }
+
+    .essence-tag {
+        background-color: #58320D;
+    }
+
+    .question-icon {
+        background-color: #58320D;
+        color: #AF7528;
+    }
+}

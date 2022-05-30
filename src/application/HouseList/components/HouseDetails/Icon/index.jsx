@@ -93,7 +93,7 @@ function GirlAvatar() {
   return (
     <svg
       t="1653377386412"
-      className="icon"
+      className="girl-avatar-icon"
       viewBox="0 0 1024 1024"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +144,7 @@ function BoyAvatar() {
   return (
     <svg
       t="1653377427610"
-      className="icon"
+      className="boy-avatar-icon"
       viewBox="0 0 1024 1024"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +247,7 @@ function ChampionIcon() {
   return (
     <svg
       t="1653384437522"
-      className="icon"
+      className="champion-icon"
       viewBox="0 0 1024 1024"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -320,7 +320,7 @@ function IDCardIcon() {
   return (
     <svg
       t="1653446445429"
-      className="icon"
+      className="idcard-icon"
       viewBox="0 0 1533 1024"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
