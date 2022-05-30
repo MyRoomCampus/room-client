@@ -58,12 +58,13 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .house-assess-top {
-        background-color: rgb(22, 22, 26);
+    .houseAssess {
+        color: white;
     }
 
+    .house-assess-top,
     .house-assess-bottom {
-        background-color: #2D3F54;
+        background-color: rgb(22, 22, 26);
     }
 
     .essence-tag {
