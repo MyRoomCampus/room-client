@@ -8,6 +8,7 @@
 /* Light Mode */
 
 .part {
+    transition: all .15s ease-in-out;
     background-color: var(--part-bg-color);
     color: var(--part-text-color);
     border-radius: 10px;
