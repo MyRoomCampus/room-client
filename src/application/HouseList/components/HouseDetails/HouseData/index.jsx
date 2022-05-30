@@ -160,7 +160,7 @@ export default function HouseData(props) {
                   <>
                     <span className="attr-name">挂牌</span>
                     <span className="attr-value">
-                      {data?.first_upload_at.slice(0, 10)}
+                      {data?.first_upload_at?.slice(0, 10)}
                     </span>
                   </>
                 )}

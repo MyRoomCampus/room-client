@@ -24,7 +24,7 @@ export default function HouseNeighborSource(props) {
               style={{ width: '100%', height: '120px' }}
             ></Skeleton.Button>
           ) : (
-            <HomeCard></HomeCard>
+            <HomeCard id="103612"></HomeCard>
           )}
         </Col>
       </Row>
