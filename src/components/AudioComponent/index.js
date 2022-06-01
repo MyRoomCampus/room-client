@@ -27,7 +27,7 @@ function AudioComponent(props) {
   obj = { ...style, ...obj };
   return (
     <div style={{ ...obj }}>
-      <AudioPlayer autoPlay src={data} onPlay={(e) => console.log("onPlay")} />
+      <AudioPlayer src={data} onPlay={(e) => console.log("onPlay")} />
     </div>
   );
 }

@@ -39,7 +39,7 @@ export const getJsonByIdFake = (id) => {
 };
 
 // 修改用户密码
-export const changePassword = (params) => {
+export const changePasswordReq = (params) => {
   const token = localStorage.getItem("ROOM_JWT_TOKEN_KEY");
   return axios({
     method: "PUT",

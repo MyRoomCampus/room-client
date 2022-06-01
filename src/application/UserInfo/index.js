@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Avatar } from "@douyinfe/semi-ui";
 import { Input, Button, Notification, Popconfirm } from "@douyinfe/semi-ui";
 import { useNavigate } from "react-router-dom";
+import { changePasswordReq } from "../../api/request";
 import cookie from "react-cookies";
 import "./style.css";
 
 function UserInfo(props) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [cpassword, setCpassword] = useState("");
+  const [ccpassword, setCcpassword] = useState("");
   function logout() {
     cookie.remove("userData");
     setUsername("");
@@ -41,6 +44,34 @@ function UserInfo(props) {
       console.log("@@mounted_password", password);
     }
   }, []);
+  const handleChange = (value, e) => {
+    setCpassword(value);
+  };
+  const handleChangeRepeat = (value, e) => {
+    setCcpassword(value);
+  };
+  const changePassword = () => {
+    if (ccpassword !== cpassword) {
+      Notification.error({
+        title: "两次密码不一致",
+        duration: 2,
+        position: "top",
+      });
+    } else {
+      changePasswordReq({ password: ccpassword }).then((response) => {
+        console.log(response);
+        Notification.success({
+          title: "修改密码成功，请重新登陆",
+          duration: 2,
+          position: "top",
+        });
+        cookie.remove("userData");
+        setUsername("");
+        setPassword("");
+        navigate("/login");
+      });
+    }
+  };
 
   return (
     <>
@@ -53,14 +84,34 @@ function UserInfo(props) {
 
         <br />
         <br />
-        <label style={{ display: "block" }}>用户名:</label>
+        <label style={{ display: "block", color: "blue" }}>用户名:</label>
         <br />
-        <Input value={username} size="large" disabled></Input>
+        <Input value={username} size="large" on disabled></Input>
         <br />
         <br />
-        <label style={{ display: "block" }}>密码:</label>
+        {/* <label style={{ display: "block" }}>密码:</label>
         <br />
         <Input mode="password" value={password} size="large" disabled></Input>
+        <br />
+        <br /> */}
+        <label style={{ display: "block", color: "red" }}>新密码:</label>
+        <br />
+        <Input
+          mode="password"
+          value={cpassword}
+          size="large"
+          onChange={handleChange}
+        ></Input>
+        <br />
+        <br />
+        <label style={{ display: "block", color: "red" }}>确认新密码:</label>
+        <br />
+        <Input
+          mode="password"
+          value={ccpassword}
+          size="large"
+          onChange={handleChangeRepeat}
+        ></Input>
         <br />
         <br />
         <div className="avatar">
@@ -70,6 +121,7 @@ function UserInfo(props) {
             type="danger"
             style={{ marginRight: 8, marginTop: "20px" }}
             block
+            onClick={changePassword}
           >
             修改密码
           </Button>
