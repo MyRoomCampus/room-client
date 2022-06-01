@@ -1,0 +1,60 @@
+/* HouseTest */
+
+.house-test-top {
+    height: 60px;
+    line-height: 60px;
+    background-color: #FFF3DA;
+    border-radius: 10px 10px 0 0;
+}
+
+.house-test-top .special-font-1 {
+    color: #58320D;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.house-test-top .special-font-2 {
+    color: #D48444;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.house-test-top .special-font-3 {
+    color: #58320D;
+}
+
+.house-test-bottom {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.house-test-bottom .grade {
+    background-color: #333534;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.house-test-bottom .desc {
+    background-color: #FED78D;
+    padding: 5px;
+}
+
+.landscape {
+    display: inline-block;
+    background-image: url("/public/houseDetail/fake-1.png");
+    width: 80px;
+    height: 80px;
+    background-size: 100%;
+}
+
+.landscape-desc-tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.landscape-tag {
+    display: flex;
+    justify-content: space-between;
+}

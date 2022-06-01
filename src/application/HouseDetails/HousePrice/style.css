@@ -1,0 +1,55 @@
+/* HousePrice */
+
+.price-sum {
+    background-color: #f4f4f4;
+    padding: 20px 0;   
+}
+
+.price-sum-left,
+.price-sum-right {
+    width: 50%;
+    text-align: center;
+}
+
+.price-attr-name {
+    display: block;
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.price-attr-value-1 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.price-attr-value-2 {
+    font-size: 14px;
+}
+
+.price-down-icon {
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid green;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.price-up-icon {
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid red;
+}
+
+.line-chart {
+    height: 180px;
+    background-image: url("/public/houseDetail/fake-3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

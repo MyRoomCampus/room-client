@@ -1,0 +1,147 @@
+{
+  "projectId": "bytetance",
+  "projectName": "xxx",
+  "author": "yyy",
+
+  "data": [
+    {
+      "id": "204564688225",
+      "name": "HouseComponent",
+      "data": "",
+      "parentid": "",
+
+      "style": {
+        "position": "absolute",
+        "left": "20px",
+        "top": "11px"
+      }
+    },
+    {
+      "id": "471412575424",
+      "name": "TextComponent",
+      "data": "字节跳动幸福里",
+      "parentid": "",
+
+      "style": {
+        "position": "absolute",
+        "left": "39px",
+        "top": "141px",
+        "width": "200px",
+        "height": "40px",
+        "border": "1px dashed #e5e5e5",
+        "borderRadius": "0%",
+        "backgroundColor": "0",
+        "padding": "20",
+        "color": "0",
+        "textAlign": "center",
+        "fontSize": "14"
+      }
+    },
+    {
+      "id": "493123473548",
+      "name": "ImageComponent",
+      "data": "blob:http://localhost:3000/d3eb72f0-3f8c-4124-82c9-3d90d155463f",
+      "parentid": "",
+
+      "style": {
+        "position": "absolute",
+        "left": "35px",
+        "top": "196px",
+        "width": "200px",
+        "height": "200px",
+        "border": "1px dashed #e5e5e5",
+        "backgroundColor": "0",
+        "padding": "0"
+      }
+    },
+    {
+      "id": "540295367764",
+      "name": "VideoComponent",
+      "parentid": "",
+      "data": "https://p1.haoduofangs.com/obj/ttfe/fproject/website/out_1577182578172.mp4",
+      "style": {
+        "position": "absolute",
+        "left": "2px",
+        "top": "402px",
+        "width": "340px",
+        "height": "200px",
+        "border": "1px dashed #e5e5e5",
+        "backgroundColor": "0",
+        "padding": "0"
+      }
+    },
+    {
+      "id": "331010283814",
+      "name": "AudioComponent",
+      "parentid": "",
+      "data": "http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3",
+
+      "style": {
+        "position": "absolute",
+        "left": "-4px",
+        "top": "571px",
+        "width": "340px",
+        "height": "100px",
+        "padding": "0"
+      }
+    },
+    {
+      "id": "795168984341",
+      "name": "BoxComponent",
+      "data": "",
+      "parentid": "",
+
+      "style": {
+        "position": "absolute",
+        "left": "2px",
+        "top": "706px",
+        "width": "340px",
+        "height": "400px",
+        "border": "1px dashed #e5e5e5",
+        "borderRadius": "0%",
+        "backgroundColor": "0",
+        "padding": "0"
+      },
+      "children": [
+        {
+          "id": "632424803050",
+          "name": "TextComponent",
+          "data": "字节跳动幸",
+          "parentid": "795168984341",
+
+          "style": {
+            "position": "absolute",
+            "left": "0",
+            "top": "0px",
+            "width": "100px",
+            "height": "30px",
+            "border": "1px dashed #e5e5e5",
+            "borderRadius": "0%",
+            "backgroundColor": "0",
+            "padding": "0",
+            "color": "0",
+            "textAlign": "center",
+            "fontSize": "14"
+          }
+        },
+        {
+          "id": "220594739912",
+          "name": "ImageComponent",
+          "data": "https://lf3-xfl.bytescm.com/obj/xfl-static/xfl_site/img/608b2b5.jpeg",
+          "parentid": "795168984341",
+
+          "style": {
+            "position": "absolute",
+            "left": "0",
+            "top": "40px",
+            "width": "340px",
+            "height": "300px",
+            "border": "1px dashed #e5e5e5",
+            "backgroundColor": "0",
+            "padding": "0"
+          }
+        }
+      ]
+    }
+  ]
+}

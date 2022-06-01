@@ -1,0 +1,39 @@
+/* HouseFooter */
+
+.footer-before {
+    margin-bottom: 80px;
+}
+
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer {
+    padding-top: 15px;
+    background-color: white;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom)) !important;
+}
+
+.white-small-font {
+    color: white;
+    font-size: 14px;
+}
+
+.online-contact {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #FD972A;
+    padding: 7px;
+    text-align: center;
+}
+
+.phone-call {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #FC5601;
+    padding: 7px;
+    text-align: center;
+}
