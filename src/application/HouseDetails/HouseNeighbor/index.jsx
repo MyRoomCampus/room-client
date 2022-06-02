@@ -1,30 +1,51 @@
 import React from 'react';
-import { Col, Row, Tabs, TabPane } from '@douyinfe/semi-ui';
+import { Col, Row, Tabs, TabPane, Skeleton } from '@douyinfe/semi-ui';
 import { BusIcon } from '../Icon';
 import '../index.css';
 import './style.css';
 
-export default function HouseNeighbor() {
+export default function HouseNeighbor(props) {
+  const { loading } = props;
   return (
     <div className="part houseNeighbor padding-bottom-15">
       <Row className="padding-top-10" type="flex" align="middle">
         <Col xs={{ span: 8 }}>
-          <span className="part-title">周边配套</span>
+          {loading ? (
+            <Skeleton.Button></Skeleton.Button>
+          ) : (
+            <span className="part-title">周边配套</span>
+          )}
         </Col>
         <Col style={{ marginLeft: 'auto' }}>
-          <a href="#top" className="link-style">
-            查看全部 {'>'}
-          </a>
+          {loading ? (
+            <Skeleton.Button></Skeleton.Button>
+          ) : (
+            <a href="##" className="link-style">
+              查看全部 {'>'}
+            </a>
+          )}
         </Col>
       </Row>
       <Row className="padding-top-20">
         <Col xs={{ span: 24 }}>
-          <div className="map"></div>
+          {loading ? (
+            <Skeleton.Button
+              style={{ width: '100%', height: '200px' }}
+            ></Skeleton.Button>
+          ) : (
+            <div className="map"></div>
+          )}
         </Col>
       </Row>
       <Row>
         <Col xs={{ span: 24 }}>
-          <MapNavigation></MapNavigation>
+          {loading ? (
+            <Skeleton.Button
+              style={{ width: '100%', height: '140px', marginTop: '10px' }}
+            ></Skeleton.Button>
+          ) : (
+            <MapNavigation></MapNavigation>
+          )}
         </Col>
       </Row>
     </div>
@@ -62,7 +83,7 @@ function MapNavContent() {
         <Col xs={{ span: 2 }}>
           <BusIcon></BusIcon>
         </Col>
-        <Col xs={{ span: 16 }} className="padding-left-5">
+        <Col xs={{ span: 16 }} className="nav-method-name padding-left-5">
           昌平（地铁昌平线）
         </Col>
         <Col xs={{ span: 3 }} className="highlight-attr-name">
@@ -76,8 +97,8 @@ function MapNavContent() {
         <Col xs={{ span: 2 }}>
           <BusIcon></BusIcon>
         </Col>
-        <Col xs={{ span: 16 }} className="padding-left-5">
-          昌平西关环岛（493路;872 ...）
+        <Col xs={{ span: 16 }} className="nav-method-name padding-left-5">
+          昌平西关环岛（493路;872路）
         </Col>
         <Col xs={{ span: 3 }} className="highlight-attr-name">
           直线
@@ -90,7 +111,7 @@ function MapNavContent() {
         <Col xs={{ span: 2 }}>
           <BusIcon></BusIcon>
         </Col>
-        <Col xs={{ span: 16 }} className="padding-left-5">
+        <Col xs={{ span: 16 }} className="nav-method-name padding-left-5">
           昌平西关环岛（493路;872路）
         </Col>
         <Col xs={{ span: 3 }} className="highlight-attr-name">
