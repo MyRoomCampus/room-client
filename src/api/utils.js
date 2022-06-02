@@ -6,7 +6,6 @@ import AudioComponent from "../components/AudioComponent";
 import VideoComponent from "../components/VideoComponent";
 import HouseComponent from "../components/HouseComponent";
 import HouseDetails from "../application/HouseDetails";
-import { Link } from "react-router-dom";
 const build_tree = (component_json) => {
   let ans = {
     name: "root",

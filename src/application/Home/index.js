@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Outlet } from "react-router";
 import NavBar from "../../components/NavBar/index";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 // import cookie from "react-cookies";
 // import { Notification } from "@douyinfe/semi-ui";
 import "./style.css";

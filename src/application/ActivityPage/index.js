@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { getJsonById, getJsonByIdFake } from "../../api/request";
+import { getJsonByIdFake } from "../../api/request";
 import { Button } from "@douyinfe/semi-ui";
 import { render_json } from "../../api/utils";
 import "./style.css";
+import "../../assets/global-style.css";
 function ActivityPage(props) {
   const { id } = useParams();
   const [jsonSchema, setJsonScheme] = useState([]);
@@ -34,7 +35,9 @@ function ActivityPage(props) {
             onClick={handleNavigate}
             style={{ height: "50px" }}
             theme="solid"
-          >{`<`}</Button>
+          >
+            <span className="iconfont">&#xe8a4;</span>
+          </Button>
         </div>
         <div>{render_json(jsonSchema, id)}</div>
       </div>

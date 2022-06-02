@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import Card from "../../components/Card";
 import { Link, useNavigate } from "react-router-dom";
 import cookie from "react-cookies";
-import { Notification, Pagination } from "@douyinfe/semi-ui";
+import { Pagination } from "@douyinfe/semi-ui";
 import { IconSearch } from "@douyinfe/semi-icons";
-import { Input, Button } from "@douyinfe/semi-ui";
+import { Input } from "@douyinfe/semi-ui";
 
 import "./style.css";
 import { getBatchHouseList } from "../../api/request";
@@ -39,28 +39,27 @@ function HouseList(props) {
     // });
     navigate("/login");
   }
-  useEffect(() => {
-    let userData = cookie.load("userData");
 
-    if (!userData) {
-      // Notification.warning({
-      //   title: "请前往登陆",
-      //   duration: 3,
-      //   theme: "light",
-      //   position: "top",
-      // });
-      navigate("/login");
-    }
+  useEffect(() => {
+    const getHouseListT = async (params) => {
+      let response = await getBatchHouseList(params);
+      setHouseList(response.data.data);
+      setCount(response.data.count);
+      console.log(count);
+    };
+
     if (query !== "") {
-      getHouseList({ page: page, perpage: 20, query: query });
+      getHouseListT({ page: page, perpage: 20, query: query });
     } else {
-      getHouseList({ page: page, perpage: 20 });
+      getHouseListT({ page: page, perpage: 20 });
     }
-  }, [page]);
+  }, [page, count, query]);
   const getHouseList = async (params) => {
     let response = await getBatchHouseList(params);
     setHouseList(response.data.data);
-    setCount(response.data.count);
+    if (count !== response.data.count) {
+      setCount(response.data.count);
+    }
     console.log(count);
   };
 

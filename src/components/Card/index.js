@@ -6,25 +6,40 @@ import { getHouseInfo } from "../../api/request";
 function Card(props) {
   const { id, option, page } = props;
   const [cardData, setCardData] = useState({});
-  const getCardInfo = (id) => {
-    getHouseInfo(id)
-      .then((response) => {
-        let p = {
-          ...response.data.data,
-          image: require(`./assets/${((option * page) % 20) + 1}.jpg`),
-          tags: ["值得购买", "住宅", "购物方便", "公交直达"],
-        };
-        setCardData(p);
-        console.log("---");
-        console.log(cardData);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
-  };
+  // const getCardInfo = (id) => {
+  //   getHouseInfo(id)
+  //     .then((response) => {
+  //       let p = {
+  //         ...response.data.data,
+  //         image: require(`./assets/${((option * page) % 20) + 1}.jpg`),
+  //         tags: ["值得购买", "住宅", "购物方便", "公交直达"],
+  //       };
+  //       setCardData(p);
+  //       console.log("---");
+  //       console.log(cardData);
+  //     })
+  //     .catch((e) => {
+  //       console.log(e);
+  //     });
+  // };
   useEffect(() => {
-    getCardInfo(id);
-  }, [id]);
+    const getCardInfoT = (id) => {
+      getHouseInfo(id)
+        .then((response) => {
+          let p = {
+            ...response.data.data,
+            image: require(`./assets/${((option * page) % 20) + 1}.jpg`),
+            tags: ["值得购买", "住宅", "购物方便", "公交直达"],
+          };
+          setCardData(p);
+          console.log("---");
+        })
+        .catch((e) => {
+          console.log(e);
+        });
+    };
+    getCardInfoT(id);
+  }, [id, option, page]);
   return (
     <>
       {JSON.stringify(cardData) === "{}" ? null : (
@@ -33,7 +48,8 @@ function Card(props) {
           <div className="content-container">
             <div className="title">{cardData.listingName}</div>
             <div className="area">
-              {cardData.cityName} | {cardData.neighborhoodName} | {cardData.squaremeter / 100}m²
+              {cardData.cityName} | {cardData.neighborhoodName} |{" "}
+              {cardData.squaremeter / 100}m²
             </div>
             <div className="tags">
               {cardData.tags.map((v, index) => {

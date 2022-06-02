@@ -43,7 +43,7 @@ function UserInfo(props) {
       console.log("@@mounted_username", username);
       console.log("@@mounted_password", password);
     }
-  }, []);
+  }, [navigate, password, username]);
   const handleChange = (value, e) => {
     setCpassword(value);
   };
@@ -54,6 +54,12 @@ function UserInfo(props) {
     if (ccpassword !== cpassword) {
       Notification.error({
         title: "两次密码不一致",
+        duration: 2,
+        position: "top",
+      });
+    } else if (cpassword.length < 6) {
+      Notification.error({
+        title: "请保证密码长度大于等于6位",
         duration: 2,
         position: "top",
       });
@@ -86,7 +92,7 @@ function UserInfo(props) {
         <br />
         <label style={{ display: "block", color: "blue" }}>用户名:</label>
         <br />
-        <Input value={username} size="large" on disabled></Input>
+        <Input value={username} size="large" disabled></Input>
         <br />
         <br />
         {/* <label style={{ display: "block" }}>密码:</label>

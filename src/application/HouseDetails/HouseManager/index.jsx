@@ -37,10 +37,10 @@ export default function HouseManager() {
           </div>
         </Col>
         <Col className="flex-align-center" style={{ marginLeft: 'auto' }}>
-          <a href="#" className="msg-icon">
+          <a href="#top" className="msg-icon">
             <MessageIcon></MessageIcon>
           </a>
-          <a href="#" className="msg-icon margin-left-15">
+          <a href="#top" className="msg-icon margin-left-15">
             <PhoneIcon></PhoneIcon>
           </a>
         </Col>

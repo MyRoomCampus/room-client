@@ -5,7 +5,6 @@ import Welcome from "../../components/Welcome";
 import { asyncRegister } from "../../store/slice/registerSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import cookie from "react-cookies";
 
 import "./style.css";
 

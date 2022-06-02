@@ -14,7 +14,7 @@ export default function HouseAssess() {
             入选北京热搜小区榜第3名
           </span>
           <span className="special-box margin-left-auto">
-            <a href="#" className="link-style">
+            <a href="#top" className="link-style">
               {'>>'}
             </a>
           </span>
@@ -26,7 +26,7 @@ export default function HouseAssess() {
             <Col xs={{ span: 24 }} className="flex-between">
               <span className="part-title">远洋山水</span>
               <span>
-                <a href="https://www.google.com" className="link-style">
+                <a href="#top" className="link-style">
                   <span>测评得分</span>
                   <span className="padding-left-5 black-font">9.5</span> {'>'}
                 </a>
@@ -65,7 +65,7 @@ export default function HouseAssess() {
               <span className="part-title">小区点评（20）</span>
               <span>
                 <a
-                  href="https://www.google.com"
+                  href="#top"
                   className="link-style float-right"
                 >
                   查看全部 {'>'}
@@ -125,7 +125,7 @@ export default function HouseAssess() {
               <span className="question overflow-ignore-1">
                 小区物业一年给多少钱都管哈哈哈哈哈哈哈哈
               </span>
-              <a href="https://www.google.com" className="link-style answer">
+              <a href="#top" className="link-style answer">
                 <span>31个回答</span>
               </a>
             </Col>

@@ -14,6 +14,7 @@ import HouseFooter from './HouseFooter';
 import { useNavigate, useLocation, useParams } from 'react-router-dom';
 import "./index.css";
 import "./style.css";
+import "../../assets/global-style.css"
 
 export default function HomeDetail(props) {
   let { pid } = props;
@@ -39,7 +40,7 @@ export default function HomeDetail(props) {
   };
   useEffect(() => {
     getHouseDetails(id);
-  }, []);
+  }, [id]);
   const path = useLocation().pathname.split("/")[1];
   const navigate = useNavigate();
   const handleNavigate = () => {
@@ -54,9 +55,9 @@ export default function HomeDetail(props) {
   return (
     <>
       {JSON.stringify(houseDetails) === "{}" ? null : (
-        <div>
+        <div id="top">
           <div className='back-nav'>
-            <Button onClick={handleNavigate} style={{ height: "50px" }} theme="solid">{`<`}</Button>
+            <Button onClick={handleNavigate} style={{ height: "50px" }} theme="solid"><span className="iconfont">&#xe8a4;</span></Button>
           </div>
           <Row>
             <Col xs={24} lg={{ span: 12, offset: 6 }}>

@@ -30,7 +30,7 @@ export default function HouseTest() {
             <Col style={{ marginLeft: 'auto' }}>
               <span>
                 <a
-                  href="#"
+                  href="#top"
                   className="link-style float-right"
                 >
                   1.6万人已读 {'>'}

@@ -14,7 +14,15 @@ export const asyncRegister = createAsyncThunk("register", async (user) => {
   if (!username) {
     Notification.error({
       title: "用户名必须指定",
-      duration: 3,
+      duration: 2,
+      theme: "light",
+      position: "top",
+    });
+    throw new Error("用户名必须指定");
+  } else if (username.length < 6) {
+    Notification.error({
+      title: "请保证用户名长度大于等于6位",
+      duration: 2,
       theme: "light",
       position: "top",
     });
@@ -22,7 +30,7 @@ export const asyncRegister = createAsyncThunk("register", async (user) => {
   } else if (!password) {
     Notification.error({
       title: "密码不能为空",
-      duration: 3,
+      duration: 2,
       theme: "light",
       position: "top",
     });
@@ -30,7 +38,15 @@ export const asyncRegister = createAsyncThunk("register", async (user) => {
   } else if (password !== passwordConfirm) {
     Notification.error({
       title: "两次密码要一致!",
-      duration: 3,
+      duration: 2,
+      theme: "light",
+      position: "top",
+    });
+    throw new Error("2次密码要一致");
+  } else if (password.length < 6) {
+    Notification.error({
+      title: "请保证密码长度大于等于6位!",
+      duration: 2,
       theme: "light",
       position: "top",
     });

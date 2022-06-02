@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "iconfont"; /* project id 3444994 */
+  src: url("?#iefix") format("embedded-opentype"),
+    url("//at.alicdn.com/t/font_3444994_hwz63f68414.woff2") format("woff2"),
+    url("//at.alicdn.com/t/font_3444994_hwz63f68414.woff") format("woff"),
+    url("//at.alicdn.com/t/font_3444994_hwz63f68414.ttf") format("truetype"),
+    url("#iconfont") format("svg");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 1.5rem;
+  font-style: normal;
+}

@@ -12,7 +12,7 @@ export default function HouseNeighbor() {
           <span className="part-title">周边配套</span>
         </Col>
         <Col style={{ marginLeft: 'auto' }}>
-          <a href="#" className="link-style">
+          <a href="#top" className="link-style">
             查看全部 {'>'}
           </a>
         </Col>

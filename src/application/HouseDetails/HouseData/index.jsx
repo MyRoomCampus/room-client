@@ -46,7 +46,7 @@ export default function HouseData(props) {
           {loading ? (
             <Skeleton.Button></Skeleton.Button>
           ) : (
-            <a href="#" className="link-style feedback">
+            <a href="#top" className="link-style feedback">
               <div className="feedback-icon">
                 <FeedbackIcon></FeedbackIcon>
               </div>
@@ -210,7 +210,7 @@ export default function HouseData(props) {
               <Col xs={{ span: 11 }}>
                 <span>
                   <a
-                    href="#"
+                    href="#top"
                     className="link-style float-right"
                   >
                     查看 {'>'}
@@ -226,7 +226,7 @@ export default function HouseData(props) {
               <Col xs={{ span: 12 }}>
                 <span>
                   <a
-                    href="#"
+                    href="#top"
                     className="link-style float-right"
                   >
                     咨询经纪人 {'>'}
@@ -250,7 +250,7 @@ export default function HouseData(props) {
               <Col xs={{ span: 11 }}>
                 <span>
                   <a
-                    href="#"
+                    href="#top"
                     className="link-style float-right"
                   >
                     咨询楼层 {'>'}
@@ -272,7 +272,7 @@ export default function HouseData(props) {
           <div className="subscribe">
             <div className="subscribe-left">订阅房源动态，掌握一手信息</div>
             <div className="subscribe-right">
-              <a href="#" className="link-style">
+              <a href="#top" className="link-style">
                 去订阅
               </a>
             </div>

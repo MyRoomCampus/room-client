@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Input, Button, Notification } from "@douyinfe/semi-ui";
+import { Input, Button } from "@douyinfe/semi-ui";
 import { IconUnlock, IconUser } from "@douyinfe/semi-icons";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { asyncLogin } from "../../store/slice/loginSlice";
 import Welcome from "../../components/Welcome";
-import cookie from "react-cookies";
 import "./style.css";
 
 function Login() {

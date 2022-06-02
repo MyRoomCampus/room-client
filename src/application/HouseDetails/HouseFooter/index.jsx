@@ -32,7 +32,7 @@ export default function HouseFooter() {
             <Col className="margin-left-auto">
               <div className="online-contact">
                 <a
-                  href="#"
+                  href="#top"
                   className="link-style white-small-font"
                 >
                   在线联系
@@ -40,7 +40,7 @@ export default function HouseFooter() {
               </div>
               <div className="phone-call margin-left-5">
                 <a
-                  href="#"
+                  href="#top"
                   className="link-style white-small-font"
                 >
                   电话咨询
