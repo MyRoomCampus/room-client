@@ -3,11 +3,17 @@
 :root {
   --part-bg-color: white;
   --part-text-color: #343535;
+  --bg-color: #f4f4f4;
 }
 
-/* common */
+body {
+  background-color: var(--bg-color);
+}
+
+/* Light Mode */
 
 .part {
+  transition: all 0.15s ease-in-out;
   background-color: var(--part-bg-color);
   color: var(--part-text-color);
   border-radius: 10px;
@@ -171,17 +177,16 @@
   margin-left: auto;
 }
 
-
-
 /* Dark Mode */
 
 @media (prefers-color-scheme: dark) {
   :root {
     --part-bg-color: rgb(22, 22, 26);
     --part-text-color: rgb(249, 249, 249);
+    --bg-color: rgb(35, 36, 41);
   }
 
-  body {
+  .person-tag {
     background-color: rgb(35, 36, 41);
   }
 }
