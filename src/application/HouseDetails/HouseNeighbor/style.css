@@ -1,8 +1,15 @@
 /* HouseNeighbor  */
 
 .map {
-    height: 200px;
-    background-image: url("/public/houseDetail/fake-2.png");
-    background-size: cover;
-    background-position: center center;
+  height: 200px;
+  background-image: url('/public/houseDetail/fake-2.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.nav-method-name {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
