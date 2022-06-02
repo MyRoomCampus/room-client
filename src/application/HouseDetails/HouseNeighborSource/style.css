@@ -6,3 +6,9 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+@media (prefers-color-scheme: dark) {
+    .more-source {
+        background-color: rgb(35, 36, 41);
+    }
+}

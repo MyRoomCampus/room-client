@@ -37,3 +37,18 @@
     padding: 7px;
     text-align: center;
 }
+
+@media (prefers-color-scheme: dark) {
+    .footer {
+        color: white;
+        background-color: rgb(22, 22, 26);
+    }
+
+    .online-contact {
+        background-color: rgb(35, 36, 41);
+    }
+
+    .phone-call {
+        background-color: rgb(35, 36, 41);
+    }
+}

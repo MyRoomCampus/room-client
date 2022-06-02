@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Row, Skeleton } from '@douyinfe/semi-ui';
-import { formatPrice, getHouseType } from '../../../api/utils'
+import { formatPrice, getHouseType } from '../../../api/utils';
 import {
   FeedbackIcon,
   PublishInstitutionIcon,
@@ -20,7 +20,7 @@ import './style.css';
 export default function HouseData(props) {
   const { loading, data } = props;
   const curYear = new Date().getFullYear();
-  const houseAge = +curYear - +data?.builtYear;
+  const houseAge = +curYear - +data?.built_year;
 
   return (
     <div className="part houseData">
@@ -44,9 +44,9 @@ export default function HouseData(props) {
         )}
         <Col xs={{ span: 8 }} style={{ marginLeft: 'auto' }}>
           {loading ? (
-            <Skeleton.Button></Skeleton.Button>
+            <Skeleton.Button style={{ marginLeft: 'auto' }}></Skeleton.Button>
           ) : (
-            <a href="#top" className="link-style feedback">
+            <a href="##" className="link-style feedback">
               <div className="feedback-icon">
                 <FeedbackIcon></FeedbackIcon>
               </div>
@@ -60,9 +60,7 @@ export default function HouseData(props) {
           {loading ? (
             <Skeleton.Button></Skeleton.Button>
           ) : (
-            <span className="house-title">
-                {data?.listingName}
-            </span>
+            <span className="house-title">{data?.listingName}</span>
           )}
         </Col>
         <Col>
@@ -70,7 +68,7 @@ export default function HouseData(props) {
             <Skeleton.Button></Skeleton.Button>
           ) : (
             <span className="house-title margin-left-15">
-                {data?.rightProperty}
+              {data?.rightProperty}
             </span>
           )}
         </Col>
@@ -116,7 +114,7 @@ export default function HouseData(props) {
           ) : (
             <div className="border-right">
               <p className="highlight-attr-value">
-                  {data?.floorPlanRoom}室{data?.floorPlanHall}厅
+                {data?.floorPlanRoom}室{data?.floorPlanHall}厅
               </p>
               <p className="highlight-attr-name padding-top-5">房型</p>
             </div>
@@ -128,7 +126,7 @@ export default function HouseData(props) {
           ) : (
             <div>
               <p className="highlight-attr-value">
-                  {data?.squaremeter / 100}平
+                {data?.squaremeter / 100}平
               </p>
               <p className="highlight-attr-name padding-top-5">建筑面积</p>
             </div>
@@ -160,7 +158,7 @@ export default function HouseData(props) {
                   <>
                     <span className="attr-name">挂牌</span>
                     <span className="attr-value">
-                          {data?.firstUploadAt.slice(0, 10)}
+                      {data?.firstUploadAt.slice(0, 10)}
                     </span>
                   </>
                 )}
@@ -194,12 +192,12 @@ export default function HouseData(props) {
               <Col xs={{ span: 12 }}>
                 <span className="attr-name">类型</span>
                 <span className="attr-value">
-                    {getHouseType(data?.propertyManagementType)}
+                  {getHouseType(data?.propertyManagementType)}
                 </span>
               </Col>
               <Col xs={{ span: 12 }}>
                 <span className="attr-name">年代</span>
-                  <span className="attr-value">{data?.builtYear}年</span>
+                <span className="attr-value">{data?.builtYear}年</span>
               </Col>
             </Row>
             <Row className="padding-top-10">
@@ -209,10 +207,7 @@ export default function HouseData(props) {
               </Col>
               <Col xs={{ span: 11 }}>
                 <span>
-                  <a
-                    href="#top"
-                    className="link-style float-right"
-                  >
+                  <a href="##" className="link-style float-right">
                     查看 {'>'}
                   </a>
                 </span>
@@ -225,10 +220,7 @@ export default function HouseData(props) {
               </Col>
               <Col xs={{ span: 12 }}>
                 <span>
-                  <a
-                    href="#top"
-                    className="link-style float-right"
-                  >
+                  <a href="##" className="link-style float-right">
                     咨询经纪人 {'>'}
                   </a>
                 </span>
@@ -239,44 +231,39 @@ export default function HouseData(props) {
                 <span className="attr-name">楼层</span>
                 <span className="attr-value">
                   {/* TODO: getFloorLevel */}
-                    {data?.floorLevel === 1
+                  {data?.floorLevel === 1
                     ? '高'
-                      : data?.floorLevel === 2
+                    : data?.floorLevel === 2
                     ? '中'
                     : '低'}
-                    楼层/共{data?.totalFloor}层
+                  楼层/共{data?.totalFloor}层
                 </span>
               </Col>
               <Col xs={{ span: 11 }}>
                 <span>
-                  <a
-                    href="#top"
-                    className="link-style float-right"
-                  >
+                  <a href="##" className="link-style float-right">
                     咨询楼层 {'>'}
                   </a>
                 </span>
               </Col>
             </Row>
-            {/* <Row className="padding-top-10">
-              <Col xs={{ span: 24 }}>
-                <span className="attr-name">房屋核验码</span>
-                <span className="attr-value">190423595530</span>
-              </Col>
-            </Row> */}
           </>
         )}
       </div>
       <Row className="padding-top-20 padding-bottom-15">
         <Col xs={{ span: 24 }}>
-          <div className="subscribe">
-            <div className="subscribe-left">订阅房源动态，掌握一手信息</div>
-            <div className="subscribe-right">
-              <a href="#top" className="link-style">
-                去订阅
-              </a>
+          {loading ? (
+            <Skeleton.Button style={{ width: '100%' }}></Skeleton.Button>
+          ) : (
+            <div className="subscribe">
+              <div className="subscribe-left">订阅房源动态，掌握一手信息</div>
+              <div className="subscribe-right">
+                <a href="##" className="link-style">
+                  去订阅
+                </a>
+              </div>
             </div>
-          </div>
+          )}
         </Col>
       </Row>
     </div>

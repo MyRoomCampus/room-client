@@ -1,17 +1,27 @@
 /* HouseManager */
 
 .no-border-tag {
-    font-size: 14px;
-    padding: 5px;
-    background-color: #f4f4f4;
+  font-size: 12px;
+  padding: 5px;
+  background-color: #f4f4f4;
 }
 
 .houseManager .msg-icon {
-    display: flex;
-    background-color: #FEF9F4;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  background-color: #fef9f4;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .no-border-tag {
+    background-color: rgb(35, 36, 41);
+  }
+
+  .msg-icon {
+    background-color: rgb(35, 36, 41);
+  }
 }
