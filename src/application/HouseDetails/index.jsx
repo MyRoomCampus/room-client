@@ -12,9 +12,29 @@ import HouseSource from './HouseSource';
 import HouseNeighborSource from './HouseNeighborSource';
 import HouseFooter from './HouseFooter';
 import { useNavigate, useLocation, useParams } from 'react-router-dom';
-import "./index.css";
-import "./style.css";
-import "../../assets/global-style.css"
+import './index.css';
+import './style.css';
+import '../../assets/global-style.css';
+
+if (window.matchMedia) {
+  const mql = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function matchMode(e) {
+    const body = document.body;
+    if (e.matches) {
+      if (!body.hasAttribute('theme-mode')) {
+        body.setAttribute('theme-mode', 'dark');
+      }
+    } else {
+      if (body.hasAttribute('theme-mode')) {
+        body.removeAttribute('theme-mode');
+      }
+    }
+  }
+
+  mql.addListener(matchMode);
+  matchMode(mql);
+}
 
 export default function HomeDetail(props) {
   let { pid } = props;
