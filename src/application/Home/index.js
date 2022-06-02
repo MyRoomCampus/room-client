@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Outlet } from "react-router";
 import NavBar from "../../components/NavBar/index";
 import { useLocation } from "react-router-dom";
@@ -6,6 +6,19 @@ import { useLocation } from "react-router-dom";
 // import { Notification } from "@douyinfe/semi-ui";
 import "./style.css";
 function Home(props) {
+  useEffect(() => {
+    const mql = window.matchMedia("(prefers-color-scheme: dark)");
+    if (mql.matches) {
+      document.body.classList.add("all");
+      document.body.setAttribute("theme-mode", "dark");
+    } else {
+      document.body.classList.remove("all");
+      if (document.body.hasAttribute("theme-mode")) {
+        document.body.removeAttribute("theme-mode");
+      }
+    }
+  }, []);
+
   // const navigate = useNavigate();
   // useEffect(() => {
   //   let userData = cookie.load("userData");
@@ -23,7 +36,7 @@ function Home(props) {
   console.log(useLocation().pathname.split("/")[1]);
   let path = useLocation().pathname.split("/")[1];
   return (
-    <div className="home_container all">
+    <div className="home_container">
       {/* <NavLink style={{ marginRight: "10px", color: "red" }} to="/houselist">
         房屋信息Tab
       </NavLink>
@@ -34,9 +47,7 @@ function Home(props) {
         异步接口测试页面Tab
       </NavLink> */}
       <Outlet />
-      {path === "houseDetails" || path === "activity" ? null : (
-        <NavBar />
-      )}
+      {path === "houseDetails" || path === "activity" ? null : <NavBar />}
     </div>
   );
 }

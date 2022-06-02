@@ -37,3 +37,11 @@
     padding: 7px;
     text-align: center;
 }
+
+@media (prefers-color-scheme: dark) {
+.footer {
+    padding-top: 15px;
+    background-color: rgb(23, 22, 22);
+    padding-bottom: calc(10px + env(safe-area-inset-bottom)) !important;
+}
+}

@@ -1,58 +1,65 @@
 /* HouseAssess */
 
 .house-assess-top {
-    background-color: #FDE3C1;
-    border-radius: 10px 10px 0 0;
-    padding: 15px 0;
+  background-color: #fde3c1;
+  border-radius: 10px 10px 0 0;
+  padding: 15px 0;
 }
 
 .house-assess-top .special-font-4 {
-    color: #AF7528;
-    font-size: 17px;
-    font-weight: bold;
+  color: #af7528;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .house-assess-bottom {
-    background-color: white;
-    border-radius: 0 0 10px 10px;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
 }
 
 .special-box {
-    display: inline-block;
-    height: 30px;
-    line-height: 30px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
 }
 
 .black-font {
-    color: black;
-    font-weight: bold;    
+  color: black;
+  font-weight: bold;
 }
 
 .essence-tag {
-    background-color: #FDE3C1;
-    font-size: 14px;
-    padding: 5px;
-    color: #AF7528;
+  background-color: #fde3c1;
+  font-size: 14px;
+  padding: 5px;
+  color: #af7528;
 }
 
 .comment {
-    line-height: 25px;
+  line-height: 25px;
 }
 
 .question-icon {
-    padding: 4px 4px;
-    background-color: #F75402;
-    color: white;
-    border-radius: 5px 0 5px 0;
-} 
+  padding: 4px 4px;
+  background-color: #f75402;
+  color: white;
+  border-radius: 5px 0 5px 0;
+}
 
 .question {
-    padding-left: 5px;
-    width: 60%;
+  padding-left: 5px;
+  width: 60%;
 }
 
 .answer {
-    color: grey;
-    font-size: 18px;
-    margin-left: auto;
+  color: grey;
+  font-size: 18px;
+  margin-left: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  .house-assess-bottom {
+    background-color: rgb(29, 27, 27);
+    border-radius: 0 0 10px 10px;
+  }
 }

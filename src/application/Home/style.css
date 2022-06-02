@@ -14,8 +14,8 @@
 /* common */
 
 .all {
-  background-color: var(--part-bg-color);
-  color: var(--part-text-color);
+  background-color: var(--part-bg-color) !important;
+  color: var(--part-text-color) !important;
 }
 @media (prefers-color-scheme: dark) {
   :root {

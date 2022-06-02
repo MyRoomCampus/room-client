@@ -90,7 +90,9 @@ function UserInfo(props) {
 
         <br />
         <br />
-        <label style={{ display: "block", color: "blue" }}>用户名:</label>
+        <label style={{ display: "block", color: "green", fontWeight: 1000 }}>
+          用户名:
+        </label>
         <br />
         <Input value={username} size="large" disabled></Input>
         <br />
@@ -100,7 +102,9 @@ function UserInfo(props) {
         <Input mode="password" value={password} size="large" disabled></Input>
         <br />
         <br /> */}
-        <label style={{ display: "block", color: "red" }}>新密码:</label>
+        <label style={{ display: "block", color: "red", fontWeight: 1000 }}>
+          新密码:
+        </label>
         <br />
         <Input
           mode="password"
@@ -110,7 +114,9 @@ function UserInfo(props) {
         ></Input>
         <br />
         <br />
-        <label style={{ display: "block", color: "red" }}>确认新密码:</label>
+        <label style={{ display: "block", color: "red", fontWeight: 1000 }}>
+          确认新密码:
+        </label>
         <br />
         <Input
           mode="password"

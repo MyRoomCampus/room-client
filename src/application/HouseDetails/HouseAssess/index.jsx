@@ -113,7 +113,7 @@ export default function HouseAssess() {
             <Col xs={{ span: 24 }} className="flex-between">
               <span className="part-title">大家都在问（20）</span>
               <span>
-                <a href="https://www.google.com" className="link-style">
+                <a href="#top" className="link-style">
                   查看全部 {'>'}
                 </a>
               </span>

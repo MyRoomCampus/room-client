@@ -8,3 +8,15 @@
   height: 50px;
   width: 100%;
 }
+@media (prefers-color-scheme: dark) {
+  .house-list {
+    background-color: #6c6666;
+    width: 100%;
+  }
+
+  .blank {
+    background-color: #6c6666;
+    height: 50px;
+    width: 100%;
+  }
+}
