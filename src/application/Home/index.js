@@ -23,7 +23,7 @@ function Home(props) {
   console.log(useLocation().pathname.split("/")[1]);
   let path = useLocation().pathname.split("/")[1];
   return (
-    <div className="home_container">
+    <div className="home_container all">
       {/* <NavLink style={{ marginRight: "10px", color: "red" }} to="/houselist">
         房屋信息Tab
       </NavLink>

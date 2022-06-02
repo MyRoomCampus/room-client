@@ -3,3 +3,27 @@
     flex-direction: column; */
     height: 100%;
 }
+
+/* Variable */
+
+:root {
+  --part-bg-color: white;
+  --part-text-color: #343535;
+}
+
+/* common */
+
+.all {
+  background-color: var(--part-bg-color);
+  color: var(--part-text-color);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --part-bg-color: rgb(22, 22, 26);
+    --part-text-color: rgb(249, 249, 249);
+  }
+
+  body {
+    background-color: rgb(35, 36, 41);
+  }
+}
