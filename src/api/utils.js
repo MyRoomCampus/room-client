@@ -5,7 +5,6 @@ import ImageComponent from "../components/ImageComponent";
 import AudioComponent from "../components/AudioComponent";
 import VideoComponent from "../components/VideoComponent";
 import HouseComponent from "../components/HouseComponent";
-import HouseDetails from "../application/HouseDetails";
 const build_tree = (component_json) => {
   let ans = {
     name: "root",
@@ -28,9 +27,10 @@ const render_dfs = (props, id) => {
           })}
         </>
       );
-    } else {
-      return <HouseDetails pid={id}></HouseDetails>;
     }
+    // else {
+    //   return <HouseDetails pid={id}></HouseDetails>;
+    // }
   } else if (props.name === "BoxComponent") {
     if (props.children && props.children.length > 0) {
       return (
@@ -62,7 +62,13 @@ const render_dfs = (props, id) => {
       <AudioComponent style={props.style} data={props.data} key={props.id} />
     );
   } else if (props.name === "HouseComponent") {
-    return <HouseComponent style={props.style} pid={id} key={props.id}></HouseComponent>;
+    return (
+      <HouseComponent
+        style={props.style}
+        pid={id}
+        key={props.id}
+      ></HouseComponent>
+    );
   }
 };
 

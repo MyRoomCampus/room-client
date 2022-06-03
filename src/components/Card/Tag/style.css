@@ -1,0 +1,11 @@
+.activity-tag {
+  position: absolute;
+  margin-left: 70vw;
+  margin-top: 9vh;
+  height: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 70px;
+  background-image: url("./assets/tag.png");
+}

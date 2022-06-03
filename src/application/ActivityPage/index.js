@@ -12,7 +12,9 @@ function ActivityPage(props) {
   const getJsonSchema = (params) => {
     getJsonById(params)
       .then((response) => {
-        setJsonScheme(JSON.parse(response.data.data.data).data);
+        if (response.data.data.data !== "[]") {
+          setJsonScheme(JSON.parse(response.data.data.data).data);
+        }
       })
       .catch((e) => {
         setJsonScheme([]);
@@ -27,6 +29,7 @@ function ActivityPage(props) {
   if (!userData) {
     navigate("/login");
   }
+
   const handleNavigate = () => {
     navigate("/");
   };
@@ -38,7 +41,6 @@ function ActivityPage(props) {
             onClick={handleNavigate}
             style={{ height: "50px" }}
             theme="solid"
-            type="danger"
           >
             <span className="iconfont">&#xe8a4;</span>
           </Button>

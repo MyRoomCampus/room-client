@@ -11,7 +11,7 @@ import HousePrice from './HousePrice';
 import HouseSource from './HouseSource';
 import HouseNeighborSource from './HouseNeighborSource';
 import HouseFooter from './HouseFooter';
-import { useNavigate, useLocation, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import cookie from "react-cookies";
 import "./index.css";
 import "./style.css";
@@ -23,7 +23,6 @@ export default function HomeDetail(props) {
   if (pid !== undefined) {
     id = pid;
   }
-
   const [houseDetails, setHouseDetails] = useState({});
   const [loading, setLoading] = useState(true);
   const getHouseDetails = (id) => {
@@ -39,7 +38,7 @@ export default function HomeDetail(props) {
   useEffect(() => {
     getHouseDetails(id);
   }, [id]);
-  const path = useLocation().pathname.split("/")[1];
+  // const path = useLocation().pathname.split("/")[1];
   const navigate = useNavigate();
   let userData = cookie.load("userData");
 
@@ -47,12 +46,13 @@ export default function HomeDetail(props) {
     navigate("/login");
   }
   const handleNavigate = () => {
-    if (path === "activity") {
-      navigate("/");
-    }
-    else if (path === "houseDetails") {
-      navigate(`/activity/${id}`);
-    }
+    // if (!haveProject) {
+    //   navigate("/");
+    // }
+    // else {
+    //   navigate(`/activity/${id}`);
+    // }
+    navigate(-1);
   }
 
   return (

@@ -21,7 +21,9 @@ export const asyncRegister = createAsyncThunk("register", async (user) => {
   } else if (password.length < 6) {
     throw new Error("请保证密码长度大于等于6位!");
   } else {
-    const response = await reqRegister({ username, password });
+    const response = await reqRegister({ username, password }).catch((e) => {
+      throw new Error(e.response.data.msg);
+    });
     return response.data;
   }
 });

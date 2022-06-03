@@ -65,15 +65,25 @@ function HouseList(props) {
         onEnterPress={searchQuery}
       ></Input>
       <div className="house-list">
-        {houseList.map((v, index) => (
-          <Link
-            key={index}
-            style={{ textDecoration: "none", color: "black" }}
-            to={`/activity/${v.id}`}
-          >
-            <Card id={v.id} option={index} page={page} key={index}></Card>
-          </Link>
-        ))}
+        {houseList.map((v, index) =>
+          v.haveProjectPublished === true ? (
+            <Link
+              key={index}
+              style={{ textDecoration: "none", color: "black" }}
+              to={`/activity/${v.id}`}
+            >
+              <Card id={v.id} option={index} page={page} key={index}></Card>
+            </Link>
+          ) : (
+            <Link
+              key={index}
+              style={{ textDecoration: "none", color: "black" }}
+              to={`/houseDetails/${v.id}`}
+            >
+              <Card id={v.id} option={index} page={page} key={index}></Card>
+            </Link>
+          )
+        )}
       </div>
       <Pagination
         total={count}
