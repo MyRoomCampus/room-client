@@ -27,15 +27,12 @@ export const reqUser = () => get("/user");
 // 获取一页房屋列表
 export const getBatchHouseList = (params) => get("/house", params);
 
-// 根据id获取活动页的json描述
-export const getJsonById = (params) => get("/json", params);
-
 // 根据id获取房屋info
 export const getHouseInfo = (id) => get(`/house/${id}`);
 
-// 根据id获取活动页的json描述(fake)
-export const getJsonByIdFake = (id) => {
-  return axios.get(`http://127.0.0.1:4523/mock/956653/course/${id}`);
+// 根据id获取活动页的json描述
+export const getJsonById = (id) => {
+  return axios.get(`https://api.saicem.top/project/${id}`);
 };
 
 // 修改用户密码

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { getJsonByIdFake } from "../../api/request";
+import { getJsonById } from "../../api/request";
 import { Button } from "@douyinfe/semi-ui";
 import { render_json } from "../../api/utils";
 import "./style.css";
@@ -9,10 +9,10 @@ function ActivityPage(props) {
   const { id } = useParams();
   const [jsonSchema, setJsonScheme] = useState([]);
   const getJsonSchema = (params) => {
-    getJsonByIdFake(params)
+    getJsonById(params)
       .then((response) => {
         console.log(response);
-        setJsonScheme(response.data.data.data);
+        setJsonScheme(JSON.parse(response.data.data.data).data);
       })
       .catch((e) => {
         console.log(e);
