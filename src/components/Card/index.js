@@ -32,7 +32,6 @@ function Card(props) {
             tags: ["值得购买", "住宅", "购物方便", "公交直达"],
           };
           setCardData(p);
-          console.log("---");
         })
         .catch((e) => {
           console.log(e);

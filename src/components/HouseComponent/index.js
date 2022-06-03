@@ -3,12 +3,9 @@ import { px2vw, px2vh } from "../../api/utils";
 import Card from "../Card";
 import { Link } from "react-router-dom";
 function HouseComponent(props) {
-  console.log("123");
   const { style, pid } = props;
   let obj = {};
   for (let key in style) {
-    // console.log(key);
-    // console.log(style[key]);
     if (typeof style[key] === "string" && style[key].endsWith("px")) {
       if (style[key] === "height" || style[key] === "top") {
         obj[key] = px2vh(

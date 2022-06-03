@@ -28,11 +28,8 @@ export default function HomeDetail(props) {
   const getHouseDetails = (id) => {
     getHouseInfo(id)
       .then((response) => {
-        // console.log(response);
         setHouseDetails(response.data.data);
         setLoading(false);
-        // console.log("---");
-        // console.log(houseDetails);
       })
       .catch((e) => {
         console.log(e);

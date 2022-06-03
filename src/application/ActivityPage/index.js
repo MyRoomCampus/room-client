@@ -11,11 +11,9 @@ function ActivityPage(props) {
   const getJsonSchema = (params) => {
     getJsonById(params)
       .then((response) => {
-        console.log(response);
         setJsonScheme(JSON.parse(response.data.data.data).data);
       })
       .catch((e) => {
-        console.log(e);
         setJsonScheme([]);
       });
   };

@@ -2,7 +2,6 @@ import { get, post } from "./config";
 import axios from "axios";
 
 export const getMusicList = (data) => {
-  console.log("qwe");
   return get("/user/record", data);
 };
 

@@ -41,13 +41,11 @@ function Register() {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    console.log("hhhh");
     let user = {
       username: username,
       password: password,
       passwordConfirm: passwordConfirm,
     };
-    console.log(user);
     dispatch(asyncRegister(user));
   }
   return (

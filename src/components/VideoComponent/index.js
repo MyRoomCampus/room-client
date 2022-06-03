@@ -7,8 +7,6 @@ function VideoComponent(props) {
   const { style, data } = props;
   let obj = {};
   for (let key in style) {
-    // console.log(key);
-    // console.log(style[key]);
     if (typeof style[key] === "string" && style[key].endsWith("px")) {
       if (style[key] === "height" || style[key] === "top") {
         obj[key] = px2vh(

@@ -32,7 +32,6 @@ const render_dfs = (props, id) => {
       return <HouseDetails pid={id}></HouseDetails>;
     }
   } else if (props.name === "BoxComponent") {
-    console.log("box");
     if (props.children && props.children.length > 0) {
       return (
         <BoxComponent style={props.style} key={props.id}>
@@ -47,33 +46,27 @@ const render_dfs = (props, id) => {
       return <BoxComponent style={props.style} key={props.id}></BoxComponent>;
     }
   } else if (props.name === "TextComponent") {
-    console.log("text");
     return (
       <TextComponent style={props.style} data={props.data} key={props.id} />
     );
   } else if (props.name === "ImageComponent") {
-    console.log("image");
     return (
       <ImageComponent style={props.style} data={props.data} key={props.id} />
     );
   } else if (props.name === "VideoComponent") {
-    console.log("video");
     return (
       <VideoComponent style={props.style} data={props.data} key={props.id} />
     );
   } else if (props.name === "AudioComponent") {
-    console.log("audio");
     return (
       <AudioComponent style={props.style} data={props.data} key={props.id} />
     );
   } else if (props.name === "HouseComponent") {
-    console.log("card");
     return <HouseComponent style={props.style} pid={id} key={props.id}></HouseComponent>;
   }
 };
 
 export const render_json = (component_json, id) => {
-  console.log(component_json);
   return render_dfs(build_tree(component_json), id);
 };
 

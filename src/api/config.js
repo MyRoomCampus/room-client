@@ -16,7 +16,6 @@ export const get = function (url, params = {}) {
   if (paramStr) {
     paramStr = paramStr.substring(0, paramStr.length - 1);
   }
-  console.log("---" + url + "?" + paramStr);
   return axios.get(url + "?" + paramStr);
 };
 

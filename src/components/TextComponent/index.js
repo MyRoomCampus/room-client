@@ -2,12 +2,9 @@ import React from "react";
 import { px2vw, px2vh } from "../../api/utils";
 
 function TextComponent(props) {
-  console.log("123");
   const { style, data } = props;
   let obj = {};
   for (let key in style) {
-    // console.log(key);
-    // console.log(style[key]);
     if (typeof style[key] === "string" && style[key].endsWith("px")) {
       if (style[key] === "height" || style[key] === "top") {
         obj[key] = px2vh(

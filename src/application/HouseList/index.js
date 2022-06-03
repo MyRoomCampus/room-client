@@ -45,7 +45,6 @@ function HouseList(props) {
       let response = await getBatchHouseList(params);
       setHouseList(response.data.data);
       setCount(response.data.count);
-      console.log(count);
     };
 
     if (query !== "") {
@@ -60,7 +59,6 @@ function HouseList(props) {
     if (count !== response.data.count) {
       setCount(response.data.count);
     }
-    console.log(count);
   };
 
   return (

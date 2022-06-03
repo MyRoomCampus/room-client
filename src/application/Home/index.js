@@ -33,7 +33,6 @@ function Home(props) {
   //     navigate("/login");
   //   }
   // }, []);
-  console.log(useLocation().pathname.split("/")[1]);
   let path = useLocation().pathname.split("/")[1];
   return (
     <div className="home_container">

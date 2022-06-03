@@ -26,7 +26,6 @@ function Login() {
   function handleSubmit(e) {
     e.preventDefault();
     let user = { username: username, password: password };
-    console.log(user);
     let p = dispatch(asyncLogin(user));
     p.then(() => {
       navigate("/");
