@@ -8,9 +8,7 @@ let initialState = {
   password: "",
 };
 export const asyncLogin = createAsyncThunk("login", async (user) => {
-  const { username, password } = user;
   initialState = user;
-  console.log(username, password);
   const response = await reqLogin(user);
   return response.data;
 });
@@ -29,13 +27,11 @@ const LoginSlice = createSlice({
     },
     [asyncLogin.fulfilled]: (state, { payload }) => {
       console.log("login Successfully!");
-      console.log(payload.accessToken);
       localStorage.setItem("ROOM_JWT_TOKEN_KEY", payload.accessToken);
       // 保存cookie
       // {path:'/'}意思是所有页面都能用这个cookie
       cookie.save("userData", initialState, { path: "/" });
       cookie.save("redirectTo", "/", { path: "/" });
-      console.log(cookie.load("userData"));
 
       return { ...state, redirectTo: "/", userData: initialState };
     },

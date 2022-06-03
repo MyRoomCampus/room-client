@@ -10,7 +10,6 @@ const initialState = {
 
 export const asyncRegister = createAsyncThunk("register", async (user) => {
   const { username, password, passwordConfirm } = user;
-  console.log(username, password, passwordConfirm);
   if (!username) {
     Notification.error({
       title: "用户名必须指定",
@@ -70,7 +69,6 @@ const registerSlice = createSlice({
       return { ...state, redirectTo: "/login" };
     },
     [asyncRegister.rejected]: (state, payload) => {
-      console.log(payload);
       Notification.error({
         title: "该用户名已注册",
         duration: 3,

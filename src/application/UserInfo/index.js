@@ -26,7 +26,6 @@ function UserInfo(props) {
 
   const navigate = useNavigate();
   useEffect(() => {
-    console.log("userinfo", cookie.load("userData"));
     let userData = cookie.load("userData");
 
     if (!userData) {
@@ -40,8 +39,6 @@ function UserInfo(props) {
     } else {
       setUsername(userData.username);
       setPassword(userData.password);
-      console.log("@@mounted_username", username);
-      console.log("@@mounted_password", password);
     }
   }, [navigate, password, username]);
   const handleChange = (value, e) => {
@@ -65,7 +62,6 @@ function UserInfo(props) {
       });
     } else {
       changePasswordReq({ password: ccpassword }).then((response) => {
-        console.log(response);
         Notification.success({
           title: "修改密码成功，请重新登陆",
           duration: 2,
