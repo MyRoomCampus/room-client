@@ -31,12 +31,6 @@ function HouseList(props) {
   let userData = cookie.load("userData");
 
   if (!userData) {
-    // Notification.warning({
-    //   title: "请前往登陆",
-    //   duration: 3,
-    //   theme: "light",
-    //   position: "top",
-    // });
     navigate("/login");
   }
 

@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { getJsonById } from "../../api/request";
 import { Button } from "@douyinfe/semi-ui";
 import { render_json } from "../../api/utils";
+import cookie from "react-cookies";
 import "./style.css";
 import "../../assets/global-style.css";
 function ActivityPage(props) {
@@ -21,7 +22,11 @@ function ActivityPage(props) {
     getJsonSchema(id);
   }, [id]);
   const navigate = useNavigate();
+  let userData = cookie.load("userData");
 
+  if (!userData) {
+    navigate("/login");
+  }
   const handleNavigate = () => {
     navigate("/");
   };
