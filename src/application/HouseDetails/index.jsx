@@ -64,7 +64,7 @@ export default function HomeDetail(props) {
       {JSON.stringify(houseDetails) === "{}" ? null : (
         <div id="top">
           <div className='back-nav'>
-            <Button onClick={handleNavigate} style={{ height: "50px" }} theme="solid"><span className="iconfont">&#xe8a4;</span></Button>
+            <Button onClick={handleNavigate} style={{ height: "50px" }} theme="solid" type='tertiary'><span className="iconfont">&#xe8a4;</span></Button>
           </div>
           <Row>
             <Col xs={24} lg={{ span: 12, offset: 6 }}>

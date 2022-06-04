@@ -41,6 +41,7 @@ function ActivityPage(props) {
             onClick={handleNavigate}
             style={{ height: "50px" }}
             theme="solid"
+            type="tertiary"
           >
             <span className="iconfont">&#xe8a4;</span>
           </Button>
