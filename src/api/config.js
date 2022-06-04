@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "https://api.saicem.top";
+export const baseUrl = "https://api.saicem.top";
 
 /**
  * get请求

@@ -1,5 +1,5 @@
 import { HubConnectionBuilder, HubConnectionState } from '@microsoft/signalr';
-import baseUrl from './config';
+import { baseUrl } from './config';
 
 export class SignalRClient {
   url = `${baseUrl}/hub/project`;
