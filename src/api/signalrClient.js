@@ -1,8 +1,8 @@
 import { HubConnectionBuilder, HubConnectionState } from '@microsoft/signalr';
+import baseUrl from './config';
 
 export class SignalRClient {
-  baseUrl = 'https://localhost:5000';
-  url = `${this.baseUrl}/hub/project`;
+  url = `${baseUrl}/hub/project`;
 
   onReceiveVisit = () => console.warn('onReceiveVisit not implemented');
   onReceiveMessage = () => console.warn('onReceiveMessage not implemented');
