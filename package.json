@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@douyinfe/semi-ui": "^2.10.1",
+    "@microsoft/signalr": "^6.0.5",
     "@reduxjs/toolkit": "^1.8.1",
     "ahooks": "^3.4.0",
     "axios": "^0.27.2",

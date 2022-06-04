@@ -6,6 +6,7 @@ import { render_json } from "../../api/utils";
 import cookie from "react-cookies";
 import "./style.css";
 import "../../assets/global-style.css";
+import { SignalRClient } from "../../api/signalrClient";
 function ActivityPage(props) {
   const { id } = useParams();
   const [jsonSchema, setJsonScheme] = useState([]);
@@ -29,6 +30,20 @@ function ActivityPage(props) {
   if (!userData) {
     navigate("/login");
   }
+
+  const accessToken =  localStorage.getItem('ROOM_JWT_TOKEN_KEY')
+
+  const client = new SignalRClient(accessToken);
+
+  const connect = async() => {
+    await client.startUp()
+    // 发送 houseId 即可建立通讯
+    await client.sendVisit(id)
+  }
+
+  useEffect(() => {
+    void connect()
+  })
 
   const handleNavigate = () => {
     navigate("/");
