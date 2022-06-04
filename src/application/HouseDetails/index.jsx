@@ -52,7 +52,11 @@ export default function HomeDetail(props) {
     // else {
     //   navigate(`/activity/${id}`);
     // }
-    navigate(-1);
+    if (houseDetails.haveProjectPublished) {
+      navigate(`/activity/${id}`);
+    } else {
+      navigate("/");
+    }
   }
 
   return (
