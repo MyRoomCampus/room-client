@@ -24,7 +24,6 @@ function Home(props) {
     if (diff > 1200000) {
       refreshAccessToken().then((response) => {
         localStorage.setItem("ROOM_JWT_TOKEN_KEY", response.data.accessToken);
-        console.log(localStorage.getItem("REFRESH_TIME"));
         localStorage.setItem("REFRESH_TIME", new Date().getTime());
       });
     }

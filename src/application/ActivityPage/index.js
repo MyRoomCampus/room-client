@@ -32,7 +32,6 @@ function ActivityPage(props) {
   }
 
   const accessToken = localStorage.getItem("ROOM_JWT_TOKEN_KEY");
-  console.log(accessToken);
   const client = new SignalRClient(accessToken);
 
   const connect = async () => {
