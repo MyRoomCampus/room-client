@@ -4,7 +4,6 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/MyRoomCampus/room-client?style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues/MyRoomCampus/room-client?style=flat-square)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/MyRoomCampus/room-client?style=flat-square)
-[![Deploy](https://github.com/MyRoomCampus/room-client/actions/workflows/deploy.yml/badge.svg?branch=master)](https://github.com/MyRoomCampus/room-client/actions/workflows/deploy.yml)
 ### ✨ Features
 待补充．．．
 
