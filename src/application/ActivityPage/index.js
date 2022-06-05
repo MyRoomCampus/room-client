@@ -31,19 +31,19 @@ function ActivityPage(props) {
     navigate("/login");
   }
 
-  const accessToken =  localStorage.getItem('ROOM_JWT_TOKEN_KEY')
-
+  const accessToken = localStorage.getItem("ROOM_JWT_TOKEN_KEY");
+  console.log(accessToken);
   const client = new SignalRClient(accessToken);
 
-  const connect = async() => {
-    await client.startUp()
+  const connect = async () => {
+    await client.startUp();
     // 发送 houseId 即可建立通讯
-    await client.sendVisit(id)
-  }
+    await client.sendVisit(id);
+  };
 
   useEffect(() => {
-    void connect()
-  })
+    void connect();
+  });
 
   const handleNavigate = () => {
     navigate("/");
