@@ -32,10 +32,25 @@ function ActivityPage(props) {
     navigate("/login");
   }
 
+  const [localOfferKey, setLocalOfferKey] = useState('')
+
   useEffect(() => {
     const accessToken = localStorage.getItem("ROOM_JWT_TOKEN_KEY");
     const client = new SignalRClient(accessToken);
     const connect = async () => {
+      const pc = new RTCPeerConnection();
+
+      client.onReceivePreOffer = (offerKey) => {
+        setLocalOfferKey(offerKey)
+        client.sendPreAnswer(offerKey, true)
+        console.log(offerKey);
+      }
+
+      client.onReceiveIceCandidate = (offerKey, candidate) => {
+        pc.addIceCandidate(new RTCIceCandidate(candidate));
+        client.sendIceCandidateAnswer(offerKey, candidate)
+      }
+
       await client.startUp();
       // 发送 houseId 即可建立通讯
       await client.sendVisit(id);

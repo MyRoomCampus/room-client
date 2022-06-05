@@ -52,18 +52,18 @@ export class SignalRClient {
       this.onReceivePreAnswer(offerKey, answer);
     });
 
-    this.connection.on('ReceiveIceCandidate', (user, candidate) => {
-      this.onReceiveIceCandidate(user, candidate);
+    this.connection.on('ReceiveIceCandidate', (offerKey, candidate) => {
+      this.onReceiveIceCandidate(offerKey, candidate);
     });
 
-    this.connection.on('ReceiveOffer', (user, offer) => {
+    this.connection.on('ReceiveOffer', (offerKey, offer) => {
       const obj = JSON.parse(offer);
-      void this.onReceiveOffer(user, obj);
+      void this.onReceiveOffer(offerKey, obj);
     });
 
-    this.connection.on('ReceiveAnswer', (user, answer) => {
+    this.connection.on('ReceiveAnswer', (offerKey, answer) => {
       const obj = JSON.parse(answer);
-      this.onReceiveAnswer(user, obj);
+      this.onReceiveAnswer(offerKey, obj);
     });
 
     return true;
@@ -101,14 +101,34 @@ export class SignalRClient {
     });
   }
 
-  sendIceCandidate(user, candidate) {
+  sendIceCandidateAnswer(offerKey, candidate) {
     if (!this.isConnected()) {
       return console.error('not connected');
     }
 
-    this.connection.invoke('SendIceCandidate', user, JSON.stringify(candidate)).catch(err => {
+    this.connection.invoke('SendIceCandidateAnswer', offerKey, JSON.stringify(candidate)).catch(err => {
       return console.error(err.toString());
     });
+  }
+
+  sendPreOffer(offerKey, connectionId){
+    if (!this.isConnected()){
+      return console.error('not connected');
+    }
+
+    this.connection?.invoke('SendPreOffer', offerKey, connectionId).catch(err => {
+      return console.error(err.toString());
+    })
+  }
+
+  sendPreAnswer(offerKey, agree){
+    if (!this.isConnected()){
+      return console.error('not connected');
+    }
+
+    this.connection?.invoke('SendPreAnswer', offerKey, agree).catch(err => {
+      return console.error(err.toString());
+    })
   }
 
   sendOffer(user, offer) {
