@@ -21,7 +21,7 @@ function Home(props) {
   }, []);
   if (localStorage.getItem("REFRESH_TIME") !== null) {
     let diff = new Date().getTime() - localStorage.getItem("REFRESH_TIME");
-    if (diff > 1) {
+    if (diff > 1200) {
       refreshAccessToken().then((response) => {
         localStorage.setItem("ROOM_JWT_TOKEN_KEY", response.data.accessToken);
         localStorage.setItem("REFRESH_TIME", new Date().getTime());
