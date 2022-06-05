@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 // import cookie from "react-cookies";
 // import { Notification } from "@douyinfe/semi-ui";
 import "./style.css";
+import { refreshAccessToken } from "../../api/request";
 function Home(props) {
   useEffect(() => {
     const mql = window.matchMedia("(prefers-color-scheme: dark)");
@@ -18,6 +19,15 @@ function Home(props) {
       }
     }
   }, []);
+  if (localStorage.getItem("REFRESH_TIME") !== null) {
+    let diff = new Date().getTime() - localStorage.getItem("REFRESH_TIME");
+    if (diff > 1) {
+      refreshAccessToken().then((response) => {
+        localStorage.setItem("ROOM_JWT_TOKEN_KEY", response.data.accessToken);
+        localStorage.setItem("REFRESH_TIME", new Date().getTime());
+      });
+    }
+  }
 
   // const navigate = useNavigate();
   // useEffect(() => {

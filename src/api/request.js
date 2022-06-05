@@ -47,3 +47,16 @@ export const changePasswordReq = (params) => {
     },
   });
 };
+
+// 刷新accessToken
+export const refreshAccessToken = () => {
+  const token = localStorage.getItem("ROOM_JWT_REFRESH_TOKEN_KEY");
+  return axios({
+    method: "GET",
+    url: "https://api.saicem.top/auth/refresh",
+    headers: {
+      "Content-Type": "multipart/form-data",
+      Authorization: `Bearer ${token}`,
+    },
+  });
+};

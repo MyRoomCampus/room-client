@@ -29,6 +29,7 @@ const LoginSlice = createSlice({
       console.log("login Successfully!");
       localStorage.setItem("ROOM_JWT_TOKEN_KEY", payload.accessToken);
       localStorage.setItem("ROOM_JWT_REFRESH_TOKEN_KEY", payload.refreshToken);
+      localStorage.setItem("REFRESH_TIME", new Date().getTime());
       // 保存cookie
       // {path:'/'}意思是所有页面都能用这个cookie
       cookie.save("userData", initialState, { path: "/" });
