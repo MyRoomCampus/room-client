@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getJsonById } from "../../api/request";
 import { Button } from "@douyinfe/semi-ui";
@@ -32,16 +32,16 @@ function ActivityPage(props) {
     navigate("/login");
   }
 
-  const accessToken = localStorage.getItem("ROOM_JWT_TOKEN_KEY");
-  const [client, _] = useState(new SignalRClient(accessToken));
-
-  const connect = async (client) => {
-    await client.startUp();
-    // 发送 houseId 即可建立通讯
-    await client.sendVisit(id);
-  };
-
-  useMemo(() => void connect(client), [client]);
+  useEffect(() => {
+    const accessToken = localStorage.getItem("ROOM_JWT_TOKEN_KEY");
+    const client = new SignalRClient(accessToken);
+    const connect = async () => {
+      await client.startUp();
+      // 发送 houseId 即可建立通讯
+      await client.sendVisit(id);
+    };
+    connect();
+  }, [id]);
 
   const handleNavigate = () => {
     navigate("/");
