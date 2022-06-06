@@ -41,6 +41,9 @@ function ActivityPage(props) {
       await client.sendVisit(id);
     };
     connect();
+    return (() => {
+      client.stop();
+    })
   }, [id]);
 
   const handleNavigate = () => {
